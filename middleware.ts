@@ -18,7 +18,6 @@ const publicRoutes = [
   "/privacy",
   "/terms",
   "/api/webhooks/stripe",
-  "/api/contact",
 ];
 
 export async function middleware(request: NextRequest) {
