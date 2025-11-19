@@ -5,19 +5,20 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: "2024-06-20.acacia",
+  apiVersion: "2023-10-16",
   typescript: true,
 });
 
 export const getStripeCustomerId = async (userId: string): Promise<string | null> => {
   // In a real implementation, you'd fetch this from your database
-  // For now, we'll search Stripe customers by metadata
+  // For now, we'll search Stripe customers by email or other identifier
   try {
     const customers = await stripe.customers.list({
       limit: 100,
-      metadata: { userId },
     });
-    return customers.data[0]?.id || null;
+    // Filter by metadata on the client side since Stripe API doesn't support metadata filter in list
+    const customer = customers.data.find(c => c.metadata?.userId === userId);
+    return customer?.id || null;
   } catch (error) {
     console.error("Error fetching Stripe customer:", error);
     return null;

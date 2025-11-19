@@ -10,7 +10,7 @@ export function ClerkWrapper({
 }: { 
   children: (state: { isSignedIn: boolean; user?: any }) => ReactNode 
 }) {
-  const { isSignedIn, user } = useUser();
+    const { isSignedIn = false, user } = useUser();
   return <>{children({ isSignedIn, user })}</>;
 }
 
