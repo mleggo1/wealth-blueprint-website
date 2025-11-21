@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { wealthTools } from "@/lib/tools";
 import WavePattern from "@/components/WavePattern";
 
@@ -6,26 +7,78 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative ocean-gradient section-padding overflow-hidden">
-        <WavePattern />
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-1 mb-6">
-              Build Your Wealth Blueprint
-              <br />
-              <span className="text-ocean-800">Your Path to Financial Freedom</span>
-            </h1>
-            <p className="text-body mb-8 max-w-2xl mx-auto">
-              Get a simple, clear roadmap for your financial future and a launchpad for your family.
-              I'll show you exactly how and why to invest so you can build lasting multi-generational wealth — all in one powerful view.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary">
-                Book a Discovery Call
+      <section className="relative bg-white section-padding overflow-hidden">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text */}
+            <div className="order-2 lg:order-1">
+              <h1 className="heading-1 mb-6 text-4xl md:text-5xl lg:text-6xl">
+                Build Wealth. Live Free.
+              </h1>
+              <p className="text-body text-lg md:text-xl mb-6 text-charcoal-700 leading-relaxed">
+                Hi, I'm Michael — a loving husband, dad, surfer and lifelong investor. I'm a Perth-based wealth coach and global investor with over 30 years of experience across Australia, London, New York and Bali. I help people take control of their money in a simple, open and friendly way — no jargon, no pressure, no confusion.
+              </p>
+              <p className="text-body text-lg mb-8 text-charcoal-700 leading-relaxed">
+                Together we'll build your Wealth Blueprint and give you the tools to grow your money with confidence, clarity and ease.
+              </p>
+              <Link href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
+                Start Your Wealth Blueprint
               </Link>
-              <Link href="/services#tools" className="btn-secondary">
-                Explore Wealth Tools
-              </Link>
+            </div>
+
+            {/* Right side - Image */}
+            <div className="order-1 lg:order-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/michael-hero.jpg"
+                  alt="Michael Leggo with family at Three Sisters, Blue Mountains"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-cover rounded-2xl"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Michael Section */}
+      <section className="section-padding bg-gradient-to-b from-ocean-50 to-white">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="heading-2 text-center mb-12 text-3xl md:text-4xl">
+              Meet Michael — Your Wealth Coach
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              {/* Headshot Image */}
+              <div className="md:col-span-1 flex justify-center md:justify-start">
+                <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-ocean-200 to-ocean-300 rounded-full shadow-xl border-4 border-white flex items-center justify-center">
+                  <Image
+                    src="/MJL Profile 1.JPG"
+                    alt="Michael Leggo"
+                    width={320}
+                    height={320}
+                    className="rounded-full object-cover w-full h-full relative z-10"
+                  />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <div className="md:col-span-2">
+                <div className="prose prose-lg max-w-none text-charcoal-700 leading-relaxed space-y-4">
+                  <p>
+                    I'm Michael — a loving husband, dad, surfer and lifelong investor. Over the past 30 years I've built property portfolios and automated long-term investment strategies across Australia, London, New York and Bali — all designed around one goal: financial freedom.
+                  </p>
+                  <p>
+                    I coach in an open and friendly way — easy to talk to, easy to understand, and always focused on what matters to you. I'm not a financial adviser and I don't sell products. My role is to give you clarity, help you understand how money works, and support you to build wealth in a calm, confident and practical way.
+                  </p>
+                  <p>
+                    You'll always know the why and the how, explained clearly and simply, so you can make decisions that feel right for your life and your goals.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -38,8 +91,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Serious Professionals",
-                description: "Professionals wanting a serious wealth engine, not one-off tactics.",
+                title: "Professionals and Business Owners",
+                description: "People who want an automated, set-and-forget wealth system that quietly compounds in the background — so they can stay focused on their career, business, family, and what matters most.",
               },
               {
                 title: "Legacy Builders",
@@ -209,4 +262,3 @@ export default function Home() {
     </>
   );
 }
-

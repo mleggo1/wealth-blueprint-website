@@ -87,12 +87,18 @@ export default function Footer() {
 
         {/* Disclaimer */}
         <div className="mt-12 pt-8 border-t border-navy-800">
-          <p className="text-sm text-charcoal-400 max-w-3xl">
-            <strong>Disclaimer:</strong> The information provided on this website is for educational and informational purposes only. 
-            It is not intended as financial, investment, or legal advice. Past performance is not indicative of future results. 
-            Always consult with qualified professionals before making financial decisions. Wealth Blueprint does not guarantee 
-            any specific investment outcomes.
-          </p>
+          <div className="text-sm text-charcoal-400 max-w-4xl space-y-4">
+            <p className="font-semibold text-charcoal-300 mb-2">DISCLAIMER:</p>
+            <p>
+              Any information, tools or content on this website are general in nature and do not constitute financial advice or a recommendation. This material has been prepared without taking into account your objectives, financial situation or needs.
+            </p>
+            <p>
+              Wealth Blueprint Coaching is not authorised under an Australian Financial Services (AFS) Licence to provide personal financial advice on financial products. We are not financial advisers and therefore not authorised to offer personal financial advice.
+            </p>
+            <p>
+              You should consider seeking independent advice from a licensed financial adviser before acting on any information, strategies or products mentioned on this website, to ensure they are appropriate for your personal circumstances.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
