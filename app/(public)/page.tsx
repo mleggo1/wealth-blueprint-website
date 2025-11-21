@@ -219,11 +219,6 @@ export default function Home() {
               </a>
             ))}
           </div>
-          <div className="text-center">
-            <Link href="/portal" className="btn-gold text-lg px-10 py-5 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-              See All Tools Inside the Portal
-            </Link>
-          </div>
         </div>
       </section>
 
