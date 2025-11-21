@@ -69,13 +69,13 @@ export default function Home() {
               <div className="md:col-span-2">
                 <div className="prose prose-lg max-w-none text-charcoal-700 leading-relaxed space-y-4">
                   <p>
-                    I'm Michael — a loving husband, dad, surfer and lifelong investor. Over the past 30 years I've built property portfolios and automated long-term investment strategies across Australia, London, New York and Bali — all designed around one goal: financial freedom.
+                    Michael is a loving husband, dad, surfer and lifelong investor with property and investments across Australia, London, New York and Bali.
                   </p>
                   <p>
-                    I coach in an open and friendly way — easy to talk to, easy to understand, and always focused on what matters to you. I'm not a financial adviser and I don't sell products. My role is to give you clarity, help you understand how money works, and support you to build wealth in a calm, confident and practical way.
+                    For more than three decades he's built long-term wealth using simple, structured strategies — the same principles he now teaches every client he works with.
                   </p>
                   <p>
-                    You'll always know the why and the how, explained clearly and simply, so you can make decisions that feel right for your life and your goals.
+                    He coaches in an open, friendly and down-to-earth way, making money easy to understand and even easier to act on. There's no jargon, no pressure and no sales pitch — just practical frameworks that actually work.
                   </p>
                 </div>
               </div>
@@ -129,14 +129,14 @@ export default function Home() {
               <div className="text-4xl mb-4">📈</div>
               <h3 className="heading-3 text-xl mb-4">Strategic Investing</h3>
               <p className="text-charcoal-600">
-                ETFs, Bitcoin/Ethereum, global markets, smart asset allocation. Evidence-based, high conviction, long-term focused.
+                Low-cost ETFs that let you own pieces of the world's best companies in one move. The power? Compounding — your money grows on itself over time — plus minimal fees so you keep more returns. It's Warren Buffett's approach, simplified: smart choices, long-term focus, and a plan anyone can follow.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-4xl mb-4">🌏</div>
-              <h3 className="heading-3 text-xl mb-4">Real-World Experience</h3>
+              <h3 className="heading-3 text-xl mb-4">Global Experience</h3>
               <p className="text-charcoal-600">
-                Property in Australia and Bali, practical investment coaching, working with real clients and real money.
+                A global investor including property and stock investments across Australia, London, New York and Indonesia. I teach straightforward share market investing — including buying pieces of the world's biggest companies — using strategies that work. Real experience. Real results.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
@@ -191,14 +191,17 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {wealthTools.map((tool) => (
-              <div
+              <a
                 key={tool.id}
-                className="bg-navy-800 p-8 rounded-lg border border-navy-700 hover:border-gold-500 transition-colors"
+                href={tool.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-navy-800 p-8 rounded-lg border border-navy-700 hover:border-gold-500 transition-colors cursor-pointer block hover:shadow-xl hover:scale-[1.02]"
               >
                 <div className="text-5xl mb-4">{tool.icon}</div>
                 <h3 className="heading-3 text-2xl mb-4 text-white">{tool.name}</h3>
                 <p className="text-charcoal-300 mb-6">{tool.description}</p>
-              </div>
+              </a>
             ))}
           </div>
           <div className="text-center">
