@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
   const content = (
     <html lang="en" className={inter.variable}>
       <body>
+        <ScrollToTop />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

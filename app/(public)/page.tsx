@@ -31,7 +31,7 @@ export default function Home() {
               </p>
               <div className="bg-white rounded-xl p-6 mb-8 shadow-lg border-l-4 border-gold-500">
                 <p className="text-lg text-charcoal-700 mb-0">
-                  <span className="font-bold text-navy-900">30 years</span> of global experience • <span className="font-bold text-navy-900">JPMorgan, Merrill Lynch, Bloomberg</span> • Simple strategies that work
+                  <span className="font-bold text-navy-900">30 years</span> of global experience • <span className="font-bold text-navy-900">JPMorgan, Merrill Lynch, Bank of America, Bloomberg</span> • Simple strategies that work
                 </p>
               </div>
               <Link href="/contact" className="btn-primary inline-block text-lg px-10 py-5 text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">

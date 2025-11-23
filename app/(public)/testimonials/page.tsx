@@ -45,6 +45,12 @@ export default function Testimonials() {
       content: "Michael's coaching gave me a plan I could trust — simple, automated and aligned with my lifestyle. He helped me build a generational wealth and retirement blueprint that aligns with my life goals — retiring by 60 with passive income well above my yearly expenses. The automated investment structure he guided me to set up is simple, proven, and gives me confidence I'm on the right path. It frees up my time so I can focus on what really matters — growing my business, taking care of my family, and enjoying a great lifestyle.",
       rating: 5,
     },
+    {
+      name: "Dr Tom Lee",
+      role: "RediMed | Allied Health",
+      content: "Michael's coaching helped me understand the different investment options available — how to get international exposure through low-cost ETFs, digital assets, and options that suit my age and retirement goals. He showed me how to set everything up properly and keep it simple. His tools — especially the Ultimate Target app — made things much easier to understand. It showed me visually how compounding works, how fees affect long-term results, my retirement targets, the cost of delaying, and he also recommended books I could read to learn more. Overall, it gave me clarity and confidence about how to build long-term wealth in a simple, low-stress way.",
+      rating: 5,
+    },
   ];
 
   return (
