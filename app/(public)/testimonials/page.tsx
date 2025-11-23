@@ -42,7 +42,7 @@ export default function Testimonials() {
     {
       name: "Mark Dimmock",
       role: "Founder, Dimmock Property",
-      content: "Michael's coaching gave me a plan I could trust — simple, automated and aligned with my lifestyle. He helped me build a generational wealth and retirement blueprint that aligns with my life goals — retiring by 60 with passive income well above my yearly expenses. The automated investment structure he guided me to set up is simple, proven, and gives me confidence I'm on the right path. It frees up my time so I can focus on what really matters — growing my business, taking care of my family, and enjoying a great lifestyle.",
+      content: "Working with Michael has given me genuine clarity around my long-term plan. He helped me build a generational wealth and retirement blueprint that aligns with my life goals — retiring by 60 with passive income well above my yearly expenses. The automated investment structure he guided me to set up is simple, proven, and gives me confidence I'm on the right path. It frees up my time so I can focus on what really matters — growing my business, taking care of my family, and enjoying a great lifestyle.",
       rating: 5,
     },
     {
