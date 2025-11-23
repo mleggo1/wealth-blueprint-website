@@ -33,7 +33,7 @@ export const wealthTools: WealthTool[] = [
     id: "lifespan",
     name: "LifeSpan Map",
     description: "Design your future years with intention",
-    url: "https://mleggo1.github.io/Lifespan/",
+    url: "https://lifespanmap.vercel.app/",
     icon: "⏳",
   },
 ];
