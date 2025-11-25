@@ -36,5 +36,12 @@ export const wealthTools: WealthTool[] = [
     url: "https://lifespanmap.vercel.app/",
     icon: "⏳",
   },
+  {
+    id: "kids-wealthblueprint",
+    name: "Kids Wealth Blueprint",
+    description: "Teach your children about money and investing",
+    url: "https://kids-wealthblueprint.vercel.app/",
+    icon: "👨‍👩‍👧‍👦",
+  },
 ];
 
