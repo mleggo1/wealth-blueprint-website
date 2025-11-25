@@ -16,28 +16,67 @@ export default function Home() {
           }}
         ></div>
         <div className="container-custom relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left side - Text */}
             <div className="order-2 lg:order-1">
-              <div className="inline-block bg-gold-100 text-gold-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                🎯 Your Path to Financial Freedom
-              </div>
-              <h1 className="heading-1 mb-6 text-5xl md:text-6xl lg:text-7xl leading-tight">
+              {/* Main Headline */}
+              <h1 className="heading-1 mb-8 text-6xl md:text-7xl lg:text-8xl leading-[1.1] font-bold">
                 <span className="text-teal-500">Build Wealth.</span><br />
                 <span className="text-navy-900">Live Free.</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-6 text-charcoal-700 leading-relaxed font-medium">
-                Get a clear, personalised plan that shows you exactly how to grow your money with confidence — no jargon, no pressure, no confusion.
+              
+              {/* Opening Statement */}
+              <p className="text-2xl md:text-3xl mb-10 text-charcoal-700 leading-relaxed font-medium">
+                Most people feel lost or overwhelmed with money.
               </p>
-              <div className="bg-white rounded-xl p-6 mb-8 shadow-lg border-l-4 border-gold-500">
-                <p className="text-lg text-charcoal-700 mb-0">
-                  <span className="font-bold text-navy-900">30 years</span> of global experience • <span className="font-bold text-navy-900">JPMorgan, Merrill Lynch, Bank of America, Bloomberg</span> • Simple strategies that work
+              <p className="text-xl md:text-2xl mb-10 text-charcoal-800 leading-relaxed font-semibold">
+                My job is to give you clarity, confidence and a plan that finally makes sense.
+              </p>
+
+              {/* Client Quotes */}
+              <div className="mb-10 space-y-4">
+                <p className="text-lg font-semibold text-charcoal-600 mb-4">Clients describe the experience as:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-lg">"Game-changing clarity."</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-gold-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-lg">"Simple, automated, and aligned with my life."</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-ocean-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-lg">"I finally understand how to build long-term wealth."</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-navy-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-lg">"It opened my eyes to what's truly possible."</p>
+                  </div>
+                </div>
+                <Link href="/testimonials" className="inline-block mt-4 text-teal-600 hover:text-teal-700 font-semibold text-base transition-colors">
+                  Read all testimonials →
+                </Link>
+              </div>
+
+              {/* Wealth Blueprint Description */}
+              <div className="bg-gradient-to-r from-teal-50 to-ocean-50 rounded-2xl p-6 mb-8 shadow-lg border border-teal-200">
+                <p className="text-lg md:text-xl text-charcoal-800 leading-relaxed font-medium">
+                  With the <span className="font-bold text-navy-900">Wealth Blueprint</span>, you get a personalised plan designed to <span className="font-semibold">reduce fees</span>, <span className="font-semibold">automate your investing</span>, and build <span className="font-semibold">real long-term security</span> — without the complexity or jargon.
                 </p>
               </div>
-              <Link href="/contact" className="btn-primary inline-block text-lg px-10 py-5 text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
+
+              {/* Credentials */}
+              <div className="bg-navy-900 text-white rounded-xl p-6 mb-8 shadow-xl">
+                <p className="text-lg font-bold mb-3 text-gold-400">30 years of global experience</p>
+                <p className="text-xl font-semibold mb-2 text-white">
+                  JPMorgan • Merrill Lynch • Bank of America • Bloomberg
+                </p>
+                <p className="text-sm text-ocean-200">Australia, London and New York</p>
+                <p className="text-base font-semibold mt-4 text-gold-300">Simple strategies. Real results.</p>
+              </div>
+
+              {/* CTA Button */}
+              <Link href="/contact" className="btn-primary inline-block text-xl px-12 py-6 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all mb-4">
                 Start Your Wealth Blueprint →
               </Link>
-              <p className="text-sm text-charcoal-500 mt-4">✓ Free discovery call • ✓ No obligation • ✓ Clear next steps</p>
+              <p className="text-sm text-charcoal-500">✓ Free discovery call • ✓ No obligation • ✓ Clear next steps</p>
             </div>
 
             {/* Right side - Image */}
