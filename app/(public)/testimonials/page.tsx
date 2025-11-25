@@ -51,6 +51,12 @@ export default function Testimonials() {
       content: "Michael's coaching helped me understand the different investment options available — how to get international exposure through low-cost ETFs, digital assets, and options that suit my age and retirement goals. He showed me how to set everything up properly and keep it simple. His tools — especially the Ultimate Target app — made things much easier to understand. It showed me visually how compounding works, how fees affect long-term results, my retirement targets, the cost of delaying, and he also recommended books I could read to learn more. Overall, it gave me clarity and confidence about how to build long-term wealth in a simple, low-stress way.",
       rating: 5,
     },
+    {
+      name: "Brent Campbell",
+      role: "Executive Director, Oracle Group Insurance Brokers • 25/09/2025",
+      content: "Michael has a real talent for detail and for building trusted, professional relationships. He brings clarity to complex ideas and genuinely cares about helping people make smarter long-term decisions.",
+      rating: 5,
+    },
   ];
 
   return (
