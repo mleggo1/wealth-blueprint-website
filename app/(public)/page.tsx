@@ -15,72 +15,91 @@ export default function Home() {
             backgroundSize: '60px 60px'
           }}
         ></div>
+
         <div className="container-custom relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left side - Text */}
-            <div className="order-2 lg:order-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left side - Text Content */}
+            <div>
+              {/* Warren Buffett Quote */}
+              <div className="mb-6">
+                <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
+                  "The more you learn the more you earn"
+                </p>
+                <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
+              </div>
+
               {/* Main Headline */}
-              <h1 className="heading-1 mb-8 text-6xl md:text-7xl lg:text-8xl leading-[1.1] font-bold">
-                <span className="text-teal-500">Build Wealth.</span><br />
-                <span className="text-navy-900">Live Free.</span>
+              <h1 className="heading-1 mb-5 text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold">
+                <span className="text-teal-500">Build Clarity.</span><br />
+                <span className="text-navy-900">Build Confidence.</span><br />
+                <span className="text-teal-500">Build Wealth — Through Education.</span>
               </h1>
               
               {/* Opening Statement */}
-              <p className="text-2xl md:text-3xl mb-10 text-charcoal-700 leading-relaxed font-medium">
+              <p className="text-base md:text-lg mb-6 text-charcoal-700 leading-relaxed font-medium">
                 Most people feel lost or overwhelmed with money.
               </p>
-              <p className="text-xl md:text-2xl mb-10 text-charcoal-800 leading-relaxed font-semibold">
-                My job is to give you clarity, confidence and a plan that finally makes sense.
+              <p className="text-sm md:text-base mb-6 text-charcoal-800 leading-relaxed font-semibold">
+                My job is to help you understand how wealth is built — using simple concepts, long-term thinking and world-class educational tools.
               </p>
+              <p className="text-xs md:text-sm mb-6 text-charcoal-700 leading-relaxed">
+                You'll learn the fundamentals behind investing, superannuation, compounding, and long-term decision-making — so you can make smarter, more confident choices for your future.
+              </p>
+              <div className="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6 rounded-r-lg">
+                <p className="text-sm font-semibold text-navy-900 mb-1">No sales.</p>
+                <p className="text-sm font-semibold text-navy-900 mb-1">No product recommendations.</p>
+                <p className="text-sm font-semibold text-navy-900">No financial advice.</p>
+                <p className="text-xs text-charcoal-700 mt-2">Just education that empowers you.</p>
+              </div>
 
               {/* Client Quotes */}
-              <div className="mb-10 space-y-4">
-                <p className="text-lg font-semibold text-charcoal-600 mb-4">Clients describe the experience as:</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-all">
-                    <p className="text-charcoal-800 font-medium italic text-lg">"Game-changing clarity."</p>
+              <div className="mb-6 space-y-3">
+                <p className="text-sm font-semibold text-charcoal-600 mb-3">Clients describe the experience as:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-sm">"Game-changing clarity."</p>
                   </div>
-                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-gold-500 hover:shadow-xl transition-all">
-                    <p className="text-charcoal-800 font-medium italic text-lg">"Simple, automated, and aligned with my life."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-gold-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-sm">"Simple, automated, and aligned with my life."</p>
                   </div>
-                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-ocean-500 hover:shadow-xl transition-all">
-                    <p className="text-charcoal-800 font-medium italic text-lg">"I finally understand how to build long-term wealth."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-ocean-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-sm">"I finally understand how to build long-term wealth."</p>
                   </div>
-                  <div className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-navy-500 hover:shadow-xl transition-all">
-                    <p className="text-charcoal-800 font-medium italic text-lg">"It opened my eyes to what's truly possible."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-navy-500 hover:shadow-xl transition-all">
+                    <p className="text-charcoal-800 font-medium italic text-sm">"It opened my eyes to what's truly possible."</p>
                   </div>
                 </div>
-                <Link href="/testimonials" className="inline-block mt-4 text-teal-600 hover:text-teal-700 font-semibold text-base transition-colors">
+                <Link href="/testimonials" className="inline-block mt-3 text-teal-600 hover:text-teal-700 font-semibold text-xs transition-colors">
                   Read all testimonials →
                 </Link>
               </div>
 
               {/* Wealth Blueprint Description */}
-              <div className="bg-gradient-to-r from-teal-50 to-ocean-50 rounded-2xl p-6 mb-8 shadow-lg border border-teal-200">
-                <p className="text-lg md:text-xl text-charcoal-800 leading-relaxed font-medium">
-                  With the <span className="font-bold text-navy-900">Wealth Blueprint</span>, you get a personalised plan designed to <span className="font-semibold">reduce fees</span>, <span className="font-semibold">automate your investing</span>, and build <span className="font-semibold">real long-term security</span> — without the complexity or jargon.
+              <div className="bg-gradient-to-r from-teal-50 to-ocean-50 rounded-2xl p-4 mb-6 shadow-lg border border-teal-200">
+                <p className="text-sm md:text-base text-charcoal-800 leading-relaxed font-medium">
+                  With the <span className="font-bold text-navy-900">Wealth Blueprint</span>, you get a personalised <span className="font-semibold">financial-education roadmap</span> that explains how wealth is built, how investing works, and what long-term financial principles matter most — without the complexity or jargon.
                 </p>
               </div>
 
               {/* Credentials */}
-              <div className="bg-navy-900 text-white rounded-xl p-6 mb-8 shadow-xl">
-                <p className="text-lg font-bold mb-3 text-gold-400">30 years of global experience</p>
-                <p className="text-xl font-semibold mb-2 text-white">
+              <div className="bg-navy-900 text-white rounded-xl p-4 mb-6 shadow-xl">
+                <p className="text-sm font-bold mb-2 text-gold-400">30 years of global experience</p>
+                <p className="text-base font-semibold mb-1 text-white">
                   JPMorgan • Merrill Lynch • Bank of America • Bloomberg
                 </p>
-                <p className="text-sm text-ocean-200">Australia, London and New York</p>
-                <p className="text-base font-semibold mt-4 text-gold-300">Simple strategies. Real results.</p>
+                <p className="text-xs text-ocean-200">Australia, London and New York</p>
+                <p className="text-sm font-semibold mt-3 text-gold-300">Simple strategies. Real results.</p>
               </div>
 
               {/* CTA Button */}
-              <Link href="/contact" className="btn-primary inline-block text-xl px-12 py-6 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all mb-4">
-                Start Your Wealth Blueprint →
+              <Link href="/contact" className="btn-primary inline-block text-sm md:text-base px-8 py-4 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all mb-3">
+                Start Your Wealth-Education Blueprint →
               </Link>
-              <p className="text-sm text-charcoal-500">✓ Free discovery call • ✓ No obligation • ✓ Clear next steps</p>
+              <p className="text-xs text-charcoal-500">✓ Free discovery call • ✓ No obligation • ✓ Education only — no financial advice</p>
             </div>
 
             {/* Right side - Image */}
-            <div className="order-1 lg:order-2">
+            <div className="lg:sticky lg:top-24">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform">
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent z-10"></div>
                 <Image
@@ -105,7 +124,7 @@ export default function Home() {
               What's In It For <span className="text-teal-500">You</span>?
             </h2>
             <p className="text-xl text-charcoal-700 leading-relaxed">
-              Stop guessing. Start building. Get a clear roadmap to financial freedom that's built around <span className="font-bold text-navy-900">your</span> goals, <span className="font-bold text-navy-900">your</span> timeline, and <span className="font-bold text-navy-900">your</span> life.
+              Stop guessing. Start learning. Get a clear, educational roadmap that helps you understand wealth-building principles — tailored to <span className="font-bold text-navy-900">your</span> learning needs and <span className="font-bold text-navy-900">your</span> questions.
             </p>
           </div>
           
@@ -114,21 +133,21 @@ export default function Home() {
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="heading-3 text-2xl mb-4">Clarity</h3>
               <p className="text-charcoal-700 text-lg">
-                Know exactly what to invest in, why, and how long. No more confusion or analysis paralysis.
+                Understand how different investment approaches work, why they matter, and how to make informed decisions. No more confusion or analysis paralysis.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 shadow-lg border border-gold-200 hover:shadow-xl transition-all">
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="heading-3 text-2xl mb-4">Confidence</h3>
               <p className="text-charcoal-700 text-lg">
-                Make decisions with certainty. You'll understand the why behind every strategy.
+                Make decisions with certainty. You'll understand the principles behind different wealth-building strategies.
               </p>
             </div>
             <div className="bg-gradient-to-br from-navy-50 to-navy-100 rounded-2xl p-8 shadow-lg border border-navy-200 hover:shadow-xl transition-all">
               <div className="text-5xl mb-4">🏆</div>
               <h3 className="heading-3 text-2xl mb-4">Freedom</h3>
               <p className="text-charcoal-700 text-lg">
-                Build wealth that supports the life you want — family, travel, purpose, peace of mind.
+                Learn how to build wealth that supports the life you want — family, travel, purpose, peace of mind.
               </p>
             </div>
           </div>
@@ -166,7 +185,7 @@ export default function Home() {
                 <div className="bg-white rounded-2xl p-8 shadow-xl">
                   <div className="prose prose-lg max-w-none text-charcoal-700 leading-relaxed space-y-4">
                     <p className="text-lg">
-                      Over the past <span className="font-bold text-navy-900">30 years</span>, I've built global property portfolios and long-term investment strategies across <span className="font-semibold text-ocean-700">Australia, London, New York and Bali</span> — all designed with one goal in mind: <span className="font-bold text-teal-500">financial freedom by design, not by default</span>.
+                      Over the past <span className="font-bold text-navy-900">30 years</span>, I've built global property portfolios and long-term investment strategies across <span className="font-semibold text-ocean-700">Australia, London, New York and Bali</span> — learning how wealth is built through simple, consistent principles.
                     </p>
                     <div className="bg-navy-900 text-white rounded-xl p-6 my-6">
                       <p className="text-lg mb-2 font-semibold">🏦 Global Finance Experience:</p>
@@ -178,8 +197,11 @@ export default function Home() {
                     <p className="text-lg">
                       That experience taught me how real wealth is built: <span className="font-semibold">simple, consistent, low-fee strategies</span> that work anywhere in the world.
                     </p>
+                    <p className="text-lg">
+                      Now I teach those principles through education — helping you understand money, learn how investing works, and build your financial literacy without the stress.
+                    </p>
                     <p className="text-lg font-semibold text-navy-900 border-l-4 border-gold-500 pl-4">
-                      Open, friendly, clear — that's how I coach.
+                      Open, friendly, clear — that's how I teach.
                     </p>
                   </div>
                 </div>
@@ -197,20 +219,20 @@ export default function Home() {
               What You'll <span className="text-teal-500">Get</span>
             </h2>
             <p className="text-xl text-charcoal-700 leading-relaxed">
-              A simple, powerful financial roadmap built entirely around <span className="font-bold text-navy-900">your</span> goals:
+              A simple, powerful wealth-education roadmap built entirely around <span className="font-bold text-navy-900">your</span> learning needs:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { icon: "💡", text: "Your investment options — explained in plain English" },
-              { icon: "📋", text: "A personalised \"Wealth Blueprint\" tailored to your timeline" },
-              { icon: "🎯", text: "Your Ultimate Target: what you can safely spend in retirement" },
-              { icon: "📈", text: "The Power of Compounding — why time in the market wins" },
-              { icon: "⚙️", text: "Automation so your plan becomes set-and-forget" },
-              { icon: "🧠", text: "Psychology and mindset guidance so you stay consistent" },
-              { icon: "📝", text: "Step-by-step setup that's easy to follow" },
-              { icon: "🌍", text: "Optional digital assets, ETFs, global markets exposure — explained simply" },
-              { icon: "✨", text: "Everything in one clear, visual plan" },
+              { icon: "💡", text: "A personalised wealth-education roadmap" },
+              { icon: "📋", text: "General concepts behind investing, super, ETFs and long-term planning" },
+              { icon: "🎯", text: "Educational tools that show how compounding, fees and time work" },
+              { icon: "📈", text: "Clear explanations of different investment approaches (not recommendations)" },
+              { icon: "⚙️", text: "A simple, visual framework to help you make your own informed decisions" },
+              { icon: "🧠", text: "Confidence to take action by understanding how money works" },
+              { icon: "📝", text: "A supportive guide who explains everything in plain English" },
+              { icon: "🌍", text: "Understanding how digital assets, ETFs, and global markets work — explained simply" },
+              { icon: "✨", text: "Everything in one clear, visual educational plan" },
             ].map((feature, index) => (
               <div
                 key={index}
@@ -226,6 +248,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <section className="section-padding bg-gradient-to-b from-gold-50 to-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="heading-2 mb-6 text-4xl md:text-5xl">
+              How It Works
+            </h2>
+            <p className="text-xl text-charcoal-700 leading-relaxed">
+              A simple, structured approach to financial education
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gold-200 hover:shadow-xl transition-all">
+              <div className="text-5xl mb-4">📞</div>
+              <h3 className="heading-3 text-xl mb-4">Discovery Session<br />(Education Only)</h3>
+              <p className="text-charcoal-700">
+                We discuss your goals, lifestyle and financial questions — not to recommend products, but to understand what concepts you want clarity on.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-teal-200 hover:shadow-xl transition-all">
+              <div className="text-5xl mb-4">📋</div>
+              <h3 className="heading-3 text-xl mb-4">Wealth-Education Blueprint</h3>
+              <p className="text-charcoal-700">
+                You receive a structured, easy-to-follow education plan that explains how wealth is built, how investing works, and what long-term financial principles matter most.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-ocean-200 hover:shadow-xl transition-all">
+              <div className="text-5xl mb-4">🛠️</div>
+              <h3 className="heading-3 text-xl mb-4">Tools & Visualisations</h3>
+              <p className="text-charcoal-700">
+                Interactive calculators help you explore "what-if" scenarios. These tools are hypothetical and for learning only — not advice or recommendations.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-navy-200 hover:shadow-xl transition-all">
+              <div className="text-5xl mb-4">✨</div>
+              <h3 className="heading-3 text-xl mb-4">Clarity & Confidence</h3>
+              <p className="text-charcoal-700">
+                You walk away understanding the big picture — so you can make better decisions on your own terms, or with a licensed adviser if you choose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tools & Apps */}
       <section id="tools" className="section-padding bg-gradient-to-br from-navy-900 via-navy-800 to-ocean-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -237,8 +303,14 @@ export default function Home() {
               Tools & Apps That Make It <span className="text-gold-400">Easy</span>
             </h2>
             <p className="text-xl text-ocean-200 leading-relaxed">
-              You'll also get access to powerful tools I've built to simplify complex ideas and help you take action with confidence.
+              You'll also get access to educational tools I've built to simplify complex ideas and help you understand wealth-building concepts.
             </p>
+            <div className="bg-navy-800/50 border border-navy-700 rounded-lg p-4 mt-6 max-w-3xl mx-auto">
+              <p className="text-sm text-ocean-200 italic">
+                <strong className="text-gold-400">EDUCATION TOOLS ONLY — NOT FINANCIAL ADVICE</strong><br />
+                These tools illustrate concepts only. They do not recommend products or tell you what to invest in.
+              </p>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
             {wealthTools.map((tool) => (
@@ -273,11 +345,11 @@ export default function Home() {
               Your Path to Freedom Starts <span className="text-gold-400">Here</span>
             </h2>
             <p className="text-xl text-ocean-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Let's build your Wealth Blueprint — and set you up for the next 30 years. No guesswork. No confusion. Just clarity, confidence, and a clear path forward.
+              Let's build your Wealth-Education Blueprint — and help you understand how to build wealth for the next 30 years. No guesswork. No confusion. Just clarity, confidence, and a clear educational path forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Link href="/contact" className="btn-gold text-lg px-10 py-5 font-bold shadow-2xl hover:shadow-gold-500/50 transform hover:scale-105 transition-all">
-                Start Your Wealth Blueprint →
+                Start Your Wealth-Education Blueprint →
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-12 pt-8 border-t border-ocean-600">
