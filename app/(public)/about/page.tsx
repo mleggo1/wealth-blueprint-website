@@ -37,7 +37,7 @@ export default function About() {
                   I am Michael — a loving husband, dad, surfer and lifelong investor.
                 </h2>
                 <p className="text-xl md:text-2xl leading-relaxed text-charcoal-700 mb-8 font-medium">
-                  I help people take control of their money in a simple, friendly and down-to-earth way. No jargon. No pressure. No confusion.
+                  I help people understand money in a simple, friendly and down-to-earth way. No jargon. No pressure. No confusion. Education only — no financial advice.
                 </p>
                 <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gold-500">
                   <p className="text-lg text-charcoal-700 mb-0">
@@ -77,7 +77,7 @@ export default function About() {
               <div className="text-5xl mb-4">💡</div>
               <h3 className="heading-3 text-xl mb-3">Clarity</h3>
               <p className="text-charcoal-700">
-                Know exactly what to invest in, why, and how long. No more confusion.
+                Understand how different investment approaches work, why they matter, and how to make informed decisions. No more confusion.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 shadow-lg border border-gold-200 hover:shadow-xl transition-all text-center">
@@ -163,7 +163,7 @@ export default function About() {
                     That experience taught me how real wealth is built: <span className="font-semibold text-navy-900">simple, consistent, low-fee strategies</span> that work anywhere in the world.
                   </p>
                   <p className="text-lg md:text-xl leading-relaxed text-charcoal-700">
-                    Now I bring those principles to individuals and families — helping them understand money, invest with clarity, and build multi-generational wealth without the stress.
+                    Now I teach those principles through education — helping individuals and families understand money, learn how investing works, and build their financial literacy without the stress.
                   </p>
                   <div className="mt-6 p-4 bg-gold-50 rounded-lg border-l-4 border-gold-500">
                     <p className="text-lg font-semibold text-navy-900">
@@ -182,21 +182,21 @@ export default function About() {
                   <div className="text-4xl mb-4">💡</div>
                   <h4 className="text-xl font-bold text-navy-900 mb-2">Understand How & Why</h4>
                   <p className="text-charcoal-700 text-lg">
-                    Learn the principles behind every investment decision, so you can invest with confidence.
+                    Learn the principles behind different investment approaches, so you can make informed decisions with confidence.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-all hover:scale-[1.02]">
                   <div className="text-4xl mb-4">📈</div>
-                  <h4 className="text-xl font-bold text-navy-900 mb-2">Build Smart Portfolios</h4>
+                  <h4 className="text-xl font-bold text-navy-900 mb-2">Learn About Smart Portfolio Concepts</h4>
                   <p className="text-charcoal-700 text-lg">
-                    Create low-fee, long-term ETF & digital asset portfolios that actually work.
+                    Understand how low-fee, long-term ETF & digital asset approaches work — so you can make your own informed decisions.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-gold-500 hover:shadow-xl transition-all hover:scale-[1.02]">
                   <div className="text-4xl mb-4">⚡</div>
-                  <h4 className="text-xl font-bold text-navy-900 mb-2">Automate Your Wealth</h4>
+                  <h4 className="text-xl font-bold text-navy-900 mb-2">Learn About Automation</h4>
                   <p className="text-charcoal-700 text-lg">
-                    Put your wealth on autopilot with smart automation that works while you sleep.
+                    Understand how automation concepts work — so you can apply them in your own way.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-navy-500 hover:shadow-xl transition-all hover:scale-[1.02]">
@@ -221,10 +221,10 @@ export default function About() {
               <div className="relative z-10">
                 <h3 className="text-3xl md:text-4xl font-bold mb-6">My Promise to You</h3>
                 <p className="text-xl md:text-2xl leading-relaxed mb-6 text-ocean-100">
-                  I'm not a financial adviser and I don't sell products. I teach the <span className="font-semibold text-gold-400">strategies that have created freedom</span> in my own life and in the lives of the people I mentor.
+                  I'm not a financial adviser and I don't sell products. I teach the <span className="font-semibold text-gold-400">educational concepts and principles</span> that have helped me and the people I mentor understand how wealth is built.
                 </p>
                 <p className="text-lg md:text-xl text-ocean-200">
-                  Everything is explained clearly and simply so you can build real wealth with <span className="font-semibold">certainty and direction</span> — no guesswork, no confusion, just clarity.
+                  Everything is explained clearly and simply so you can understand wealth-building with <span className="font-semibold">certainty and direction</span> — no guesswork, no confusion, just clarity. Education only — not financial advice.
                 </p>
               </div>
             </div>
@@ -242,10 +242,10 @@ export default function About() {
               </div>
               <h2 className="heading-2 mb-6 text-3xl md:text-4xl">Your Path to Freedom Starts Here</h2>
               <p className="text-body mb-8 text-lg md:text-xl text-charcoal-700">
-                Let's build your Wealth Blueprint together — and set you up for the next 30 years. No guesswork. No confusion. Just clarity, confidence, and a clear path forward.
+                Let's build your Wealth-Education Blueprint together — and help you understand how to build wealth for the next 30 years. No guesswork. No confusion. Just clarity, confidence, and a clear educational path forward.
               </p>
               <Link href="/contact" className="btn-primary text-lg px-10 py-5 inline-block font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-                Start Your Wealth Blueprint →
+                Start Your Wealth-Education Blueprint →
               </Link>
               <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-charcoal-200">
                 <div>

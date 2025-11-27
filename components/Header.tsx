@@ -25,6 +25,7 @@ export default function Header() {
     { href: "/services", label: "Services" },
     { href: "/pricing", label: "Pricing" },
     { href: "/testimonials", label: "Testimonials" },
+    { href: "/education-only", label: "Education Only" },
     { href: "/contact", label: "Contact" },
   ];
 

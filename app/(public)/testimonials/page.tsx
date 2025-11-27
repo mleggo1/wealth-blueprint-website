@@ -106,6 +106,9 @@ export default function Testimonials() {
                     <p className="text-charcoal-600 text-sm md:text-base">
                       {testimonial.role}
                     </p>
+                    <p className="text-xs text-charcoal-500 italic mt-3 pt-3 border-t border-ocean-100">
+                      These comments reflect individual experiences. They are not financial advice and do not represent typical results. Education only.
+                    </p>
                   </div>
                 </div>
               ))}
@@ -121,7 +124,7 @@ export default function Testimonials() {
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl border border-gold-200">
               <h2 className="heading-2 mb-6 text-3xl md:text-4xl">Ready to Build Your Wealth?</h2>
               <p className="text-body mb-8 text-lg md:text-xl text-charcoal-700">
-                Join others who have transformed their financial future with the Wealth Blueprint approach.
+                Join others who have gained clarity and confidence through the Wealth Blueprint educational approach.
               </p>
               <Link href="/contact" className="btn-primary text-lg px-10 py-5 inline-block font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
                 Book a Discovery Call

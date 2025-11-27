@@ -183,6 +183,20 @@ export default function Contact() {
                     />
                   </div>
 
+                  <div className="bg-teal-50 border-2 border-teal-200 rounded-lg p-4">
+                    <label className="flex items-start cursor-pointer">
+                      <input
+                        type="checkbox"
+                        name="education_only_acknowledgment"
+                        required
+                        className="mt-1 mr-3 h-5 w-5 text-teal-600 border-charcoal-300 rounded focus:ring-2 focus:ring-teal-500"
+                      />
+                      <span className="text-sm text-charcoal-800">
+                        I understand that this service provides <strong>general education only</strong> and does not include financial product advice, recommendations, or personalised investment guidance. *
+                      </span>
+                    </label>
+                  </div>
+
                   <button 
                     type="submit" 
                     className="btn-primary w-full"

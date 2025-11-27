@@ -88,15 +88,21 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="mt-12 pt-8 border-t border-navy-800">
           <div className="text-sm text-charcoal-400 max-w-4xl space-y-4">
-            <p className="font-semibold text-charcoal-300 mb-2">DISCLAIMER:</p>
+            <p className="font-semibold text-charcoal-300 mb-2 text-base">GENERAL EDUCATION ONLY — NOT FINANCIAL ADVICE</p>
             <p>
-              Any information, tools or content on this website are general in nature and do not constitute financial advice or a recommendation. This material has been prepared without taking into account your objectives, financial situation or needs.
+              The information, tools, examples and content on this website are for general educational purposes only.
             </p>
             <p>
-              Wealth Blueprint Coaching is not authorised under an Australian Financial Services (AFS) Licence to provide personal financial advice on financial products. We are not financial advisers and therefore not authorised to offer personal financial advice.
+              Nothing here is financial product advice, personal advice, legal advice, or a recommendation to buy, sell or implement any financial product or strategy.
             </p>
             <p>
-              You should consider seeking independent advice from a licensed financial adviser before acting on any information, strategies or products mentioned on this website, to ensure they are appropriate for your personal circumstances.
+              Michael Leggo and Wealth Blueprint are not licensed financial advisers and do not provide personalised financial advice.
+            </p>
+            <p>
+              All tools, calculators and examples are hypothetical and for conceptual learning only.
+            </p>
+            <p>
+              Always consider your own circumstances and seek advice from a licensed financial adviser before making financial decisions.
             </p>
           </div>
         </div>

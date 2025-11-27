@@ -51,7 +51,7 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
         <div className="container-custom">
           <h1 className="heading-1 text-center mb-6">Pricing</h1>
           <p className="text-body text-center max-w-3xl mx-auto">
-            Start with the Wealth Blueprint to create your personalised plan, then access the Portal tools for ongoing tracking and support.
+            Start with the Wealth Blueprint to create your personalised financial-education roadmap, then access the Portal tools for ongoing learning and support. Education only — not financial advice.
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
               </div>
               <div className="mt-6">
                 <h2 className="heading-2 text-3xl mb-2">Wealth Blueprint</h2>
-                <p className="text-sm text-charcoal-600 mb-6">Your personalised financial roadmap</p>
+                <p className="text-sm text-charcoal-600 mb-6">Your personalised financial-education roadmap</p>
                 <div className="mb-8">
                   <span className="text-lg md:text-xl text-charcoal-700 font-semibold">From </span>
                   <span className="text-5xl font-bold text-navy-900">$1,250</span>
@@ -79,11 +79,11 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Personalised investment plan</span>
+                    <span className="text-lg">Personalised financial-education roadmap</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Complete wealth strategy</span>
+                    <span className="text-lg">Complete wealth-education framework</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
@@ -99,7 +99,7 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Coaching recommendations</span>
+                    <span className="text-lg">General money principles you can apply</span>
                   </li>
                 </ul>
                 <Link href="/contact" className="btn-primary w-full text-center block text-lg py-4 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
@@ -216,11 +216,11 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
               },
               {
                 q: "What's included in the Wealth Blueprint?",
-                a: "The Wealth Blueprint includes two meetings, a complete personalised investment plan, automation roadmap, mindset guidance, and step-by-step setup instructions.",
+                a: "The Wealth Blueprint includes two meetings, a complete personalised financial-education roadmap, educational automation concepts, mindset guidance, and step-by-step clarity so you understand how investing works. Education only — not financial advice.",
               },
               {
                 q: "Do I need the Portal to get the Wealth Blueprint?",
-                a: "No, the Wealth Blueprint is a standalone service. However, many clients find the Portal tools valuable for ongoing tracking and planning.",
+                a: "No, the Wealth Blueprint is a standalone service. However, many clients find the Portal tools valuable for ongoing learning and understanding wealth-building concepts. All tools are for education only — not financial advice.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">

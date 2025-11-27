@@ -15,7 +15,7 @@ export default function Services() {
         <div className="container-custom">
           <h1 className="heading-1 text-center mb-6">Services</h1>
           <p className="text-body text-center max-w-3xl mx-auto">
-            Comprehensive wealth coaching and tools to help you build lasting financial freedom.
+            Comprehensive wealth education and tools to help you understand how to build lasting financial freedom. Education only — not financial advice.
           </p>
         </div>
       </section>
@@ -27,39 +27,39 @@ export default function Services() {
             <div className="bg-gold-50 border border-gold-200 rounded-lg p-8 mb-8">
               <h2 className="heading-2 mb-4">Wealth Blueprint</h2>
               <p className="text-body mb-6">
-                Your core offer — a comprehensive, personalised investment plan tailored to your life, 
-                goals, and timeline. This is a 2-meeting structure that delivers clarity, strategy, 
-                execution, and momentum.
+                Your core offer — a comprehensive, personalised financial-education roadmap tailored to your learning needs, 
+                goals, and questions. This is a 2-meeting structure that delivers clarity, understanding, 
+                and educational momentum. General education only — not financial product advice.
               </p>
               <h3 className="heading-3 text-xl mb-4">What's Included:</h3>
               <ul className="space-y-3 text-charcoal-700">
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Confirm your investment options — what to buy and why</span>
+                  <span>Your investment concepts explained in plain English — not recommendations</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Your Ultimate Target — what you can safely spend in retirement</span>
+                  <span>Educational tools that show how retirement planning concepts work</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>The Power of Compounding — why time in the market beats timing</span>
+                  <span>The Power of Compounding — educational concepts about time in the market</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Automation & execution roadmap</span>
+                  <span>Understanding automation concepts — so you can apply them yourself</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Psychology & mindset guidance</span>
+                  <span>Psychology & mindset guidance for learning</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Personalised coaching recommendations</span>
+                  <span>General money principles you can apply in your own way</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-gold-600 font-bold mr-3">✓</span>
-                  <span>Step-by-step setup guide</span>
+                  <span>Step-by-step clarity so you understand how investing works</span>
                 </li>
               </ul>
               <div className="mt-6">
@@ -79,18 +79,18 @@ export default function Services() {
             <h2 className="heading-2 mb-6">Ongoing Coaching</h2>
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <p className="text-body mb-6">
-                Monthly or quarterly check-ins to keep you on track, review your portfolio, make 
-                strategic adjustments, and provide accountability.
+                Monthly or quarterly educational check-ins to help you understand progress, review concepts, 
+                explore strategic ideas, and provide learning accountability. Education only — not financial advice.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="heading-3 text-xl mb-3">What You Get:</h3>
                   <ul className="space-y-2 text-charcoal-700">
-                    <li>• Portfolio reviews</li>
-                    <li>• Strategic adjustments</li>
-                    <li>• Accountability check-ins</li>
-                    <li>• Market insights</li>
-                    <li>• Goal tracking</li>
+                    <li>• Educational portfolio concept reviews</li>
+                    <li>• Understanding strategic concepts</li>
+                    <li>• Learning accountability check-ins</li>
+                    <li>• Educational market insights</li>
+                    <li>• Goal tracking concepts</li>
                   </ul>
                 </div>
                 <div>
@@ -117,8 +117,14 @@ export default function Services() {
         <div className="container-custom">
           <h2 className="heading-2 text-center mb-4">Wealth Tools Portal Membership</h2>
           <p className="text-center text-body mb-12 max-w-2xl mx-auto">
-            Subscription gives you access to powerful wealth-building tools and calculators.
+            Subscription gives you access to powerful educational wealth-building tools and calculators. Education only — not financial advice.
           </p>
+          <div className="bg-navy-50 border border-navy-300 rounded-lg p-4 mb-8 max-w-3xl mx-auto">
+            <p className="text-sm text-charcoal-700 italic text-center">
+              <strong className="text-navy-900">EDUCATION TOOLS ONLY — NOT FINANCIAL ADVICE</strong><br />
+              These tools illustrate concepts only. They do not recommend products or tell you what to invest in.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {wealthTools.map((tool) => (
               <div
