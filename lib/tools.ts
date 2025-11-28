@@ -12,7 +12,7 @@ export const wealthTools: WealthTool[] = [
     id: "ultimate-target",
     name: "Ultimate Target",
     description: "EDUCATION TOOL — NOT FINANCIAL ADVICE. Illustrates compounding, lifetime spending, and fees concepts only. Does not recommend products or tell you what to invest in.",
-    url: "https://mleggo1.github.io/ultimate-target/",
+    url: "https://ultimate-target.vercel.app/",
     icon: "🎯",
   },
   {
