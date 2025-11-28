@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-ocean-50 via-white to-teal-50 section-padding overflow-hidden">
+      <section className="relative bg-gradient-to-br from-ocean-50 via-white to-teal-50 pt-8 md:pt-16 lg:pt-24 pb-16 md:pb-24 overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -18,24 +18,17 @@ export default function Home() {
 
         <div className="container-custom relative z-10">
           {/* Main Headline - First on Mobile */}
-          <div className="mb-8 lg:hidden">
-            <h1 className="heading-1 mb-5 text-3xl md:text-4xl leading-[1.1] font-bold">
+          <div className="mb-6 lg:hidden">
+            <h1 className="heading-1 mb-0 text-3xl md:text-4xl leading-[1.1] font-bold">
               <span className="text-teal-500">Build Clarity.</span><br />
               <span className="text-navy-900">Build Confidence.</span><br />
               <span className="text-teal-500">Build Wealth — Through Education.</span>
             </h1>
-            {/* Warren Buffett Quote */}
-            <div className="mb-6">
-              <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
-                "The more you learn the more you earn"
-              </p>
-              <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left side - Text Content */}
-            <div className="order-2 lg:order-1">
+            <div className="order-3 lg:order-1">
               {/* Main Headline - Desktop Only */}
               <div className="hidden lg:block mb-5">
                 <h1 className="heading-1 text-4xl lg:text-5xl leading-[1.1] font-bold">
@@ -129,6 +122,14 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+
+          {/* Warren Buffett Quote - Mobile Only, After Image */}
+          <div className="lg:hidden mb-6 mt-6">
+            <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
+              "The more you learn the more you earn"
+            </p>
+            <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
           </div>
         </div>
       </section>

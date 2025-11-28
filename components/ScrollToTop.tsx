@@ -8,19 +8,37 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     // Scroll to top on route change
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [pathname]);
 
   useEffect(() => {
-    // Ensure page starts at top on initial load
+    // Ensure page starts at top on initial load and after page is fully loaded
     if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
+      // Immediate scroll
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      
+      // Also scroll after page load (in case content shifts)
+      const handleLoad = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      };
+      
       // Also handle browser back/forward navigation
       const handlePopState = () => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
       };
+      
+      if (document.readyState === 'complete') {
+        handleLoad();
+      } else {
+        window.addEventListener('load', handleLoad);
+      }
+      
       window.addEventListener("popstate", handlePopState);
-      return () => window.removeEventListener("popstate", handlePopState);
+      
+      return () => {
+        window.removeEventListener('load', handleLoad);
+        window.removeEventListener("popstate", handlePopState);
+      };
     }
   }, []);
 
