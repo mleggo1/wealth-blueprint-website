@@ -17,23 +17,40 @@ export default function Home() {
         ></div>
 
         <div className="container-custom relative z-10">
+          {/* Main Headline - First on Mobile */}
+          <div className="mb-8 lg:hidden">
+            <h1 className="heading-1 mb-5 text-3xl md:text-4xl leading-[1.1] font-bold">
+              <span className="text-teal-500">Build Clarity.</span><br />
+              <span className="text-navy-900">Build Confidence.</span><br />
+              <span className="text-teal-500">Build Wealth — Through Education.</span>
+            </h1>
+            {/* Warren Buffett Quote */}
+            <div className="mb-6">
+              <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
+                "The more you learn the more you earn"
+              </p>
+              <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left side - Text Content */}
-            <div>
-              {/* Warren Buffett Quote */}
-              <div className="mb-6">
-                <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
-                  "The more you learn the more you earn"
-                </p>
-                <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
+            <div className="order-2 lg:order-1">
+              {/* Main Headline - Desktop Only */}
+              <div className="hidden lg:block mb-5">
+                <h1 className="heading-1 text-4xl lg:text-5xl leading-[1.1] font-bold">
+                  <span className="text-teal-500">Build Clarity.</span><br />
+                  <span className="text-navy-900">Build Confidence.</span><br />
+                  <span className="text-teal-500">Build Wealth — Through Education.</span>
+                </h1>
+                {/* Warren Buffett Quote */}
+                <div className="mt-5 mb-6">
+                  <p className="text-base md:text-lg text-charcoal-700 italic font-medium">
+                    "The more you learn the more you earn"
+                  </p>
+                  <p className="text-sm md:text-base text-charcoal-600">— Warren Buffett</p>
+                </div>
               </div>
-
-              {/* Main Headline */}
-              <h1 className="heading-1 mb-5 text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold">
-                <span className="text-teal-500">Build Clarity.</span><br />
-                <span className="text-navy-900">Build Confidence.</span><br />
-                <span className="text-teal-500">Build Wealth — Through Education.</span>
-              </h1>
               
               {/* Opening Statement */}
               <p className="text-base md:text-lg mb-6 text-charcoal-700 leading-relaxed font-medium">
@@ -99,7 +116,7 @@ export default function Home() {
             </div>
 
             {/* Right side - Image */}
-            <div className="lg:sticky lg:top-24">
+            <div className="order-1 lg:order-2 lg:sticky lg:top-24">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform">
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent z-10"></div>
                 <Image
