@@ -31,8 +31,8 @@ export const wealthTools: WealthTool[] = [
   },
   {
     id: "lifespan",
-    name: "LifeSpan Map",
-    description: "EDUCATION TOOL — NOT FINANCIAL ADVICE. Illustrative tool for learning about future planning concepts only.",
+    name: "Lifespan",
+    description: "How much time do you really have left — and how will you use it? A visual planning tool that puts time, health, and freedom into perspective. EDUCATION TOOL — NOT FINANCIAL ADVICE.",
     url: "https://lifespanmap.vercel.app/",
     icon: "⏳",
   },
