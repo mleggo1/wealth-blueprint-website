@@ -11,7 +11,7 @@ export const wealthTools: WealthTool[] = [
   {
     id: "ultimate-target",
     name: "Ultimate Target",
-    description: "See how much you can safely spend in retirement and how long your money will last. Educational tool only. Not financial advice.",
+    description: "See how much you can safely spend in retirement and how long your money will last. Illustrates the power of compounding, lifetime spending, and fees concepts only. Educational tool only. Not financial advice.",
     url: "https://ultimate-target.vercel.app/",
     icon: "🎯",
   },
