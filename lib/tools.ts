@@ -25,7 +25,7 @@ export const wealthTools: WealthTool[] = [
   {
     id: "networth-engine",
     name: "Freedom Scorecard",
-    description: "EDUCATION TOOL — NOT FINANCIAL ADVICE. Illustrative scenarios only. Helps you understand progress tracking concepts.",
+    description: "A simple way to see how close you are to financial freedom. Educational tool only. Not financial advice.",
     url: "https://mjl-networth.vercel.app/",
     icon: "📊",
   },
