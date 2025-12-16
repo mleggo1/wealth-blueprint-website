@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import WavePattern from "@/components/WavePattern";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Testimonials | Wealth Blueprint",
@@ -30,7 +31,7 @@ export default function Testimonials() {
     {
       name: "Claire Marriott",
       role: "Founder, Perth Family Counselling",
-      content: "What I appreciated most about Michael's coaching was how simple he made everything feel. He explained everything in a way that felt grounded, simple and genuinely accessible. He helped me understand the long-term principles — compounding, consistency, and investing with discipline — without overwhelm or jargon. The structure he guided me to set up feels aligned with my values, gives me a clear sense of direction, and supports the kind of long-term stability and independence I want to create.",
+      content: "Working with Michael has been incredibly empowering for my financial journey. He has a calm and practical way of explaining concepts that makes them easy to understand and apply. What stood out most was his ability to break down long term investing principles in a way that felt reassuring and clear, helping me build confidence without feeling overwhelmed. The financial framework he helped me create feels aligned with what matters most to me. It gives me clarity, direction and a strong sense of security as I move toward lasting stability and independence.",
       rating: 5,
     },
     {
@@ -62,16 +63,39 @@ export default function Testimonials() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="section-padding ocean-gradient relative overflow-hidden">
+      <section className="py-12 md:py-16 ocean-gradient relative overflow-hidden">
         <WavePattern />
         <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-1 mb-6 text-5xl md:text-6xl lg:text-7xl">
-              Client <span className="text-teal-500">Testimonials</span>
-            </h1>
-            <p className="text-body text-xl md:text-2xl max-w-3xl mx-auto">
-              See what clients say about working with Michael and the Wealth Blueprint approach.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            {/* Hero Content - Side by Side Layout */}
+            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+              {/* Profile Picture - Left Side */}
+              <div className="flex-shrink-0">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-ocean-400 to-gold-400 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden border-4 border-white shadow-2xl transform hover:scale-105 transition-transform">
+                    <Image
+                      src="/michael-beach-profile.jpg"
+                      alt="Michael Leggo"
+                      width={208}
+                      height={208}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              {/* Text Content - Right Side */}
+              <div className="flex-1 text-center lg:text-left">
+                <h1 className="heading-1 mb-3 text-3xl md:text-4xl lg:text-5xl">
+                  Client <span className="text-teal-500">Testimonials</span>
+                </h1>
+                <p className="text-body text-base md:text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0">
+                  See what clients say about working with Michael and the Wealth Blueprint approach.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -106,8 +130,8 @@ export default function Testimonials() {
                     <p className="text-charcoal-600 text-sm md:text-base">
                       {testimonial.role}
                     </p>
-                    <p className="text-xs text-charcoal-500 italic mt-3 pt-3 border-t border-ocean-100">
-                      These comments reflect individual experiences. They are not financial advice and do not represent typical results. Education only.
+                    <p className="text-xs text-charcoal-500 mt-4 pt-4 border-t border-ocean-200 leading-relaxed">
+                      These testimonials reflect personal learning experiences with our educational services. They are not financial advice and do not guarantee outcomes.
                     </p>
                   </div>
                 </div>
