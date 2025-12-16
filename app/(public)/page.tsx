@@ -42,7 +42,7 @@ export default function Home() {
                   <span className="bg-gradient-to-r from-teal-500 via-teal-600 to-teal-500 bg-clip-text text-transparent drop-shadow-lg">Build Wealth — Through Education.</span>
                 </h1>
                 {/* Warren Buffett Quote - Enhanced */}
-                <div className="relative mt-6 mb-8 pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-4 rounded-r-lg">
+                <div className="relative mt-6 mb-8 pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-4 rounded-r-lg animate-subtle-pulse">
                   <div className="absolute top-2 left-2 text-2xl opacity-20">"</div>
                   <p className="text-lg md:text-xl text-charcoal-800 italic font-semibold leading-relaxed relative z-10">
                     "The more you learn the more you earn"
@@ -184,7 +184,7 @@ export default function Home() {
 
           {/* Warren Buffett Quote - Mobile Only, After Image */}
           <div className="lg:hidden mb-8 mt-8">
-            <div className="relative pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-5 rounded-r-xl shadow-lg">
+            <div className="relative pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-5 rounded-r-xl shadow-lg animate-subtle-pulse">
               <div className="absolute top-2 left-2 text-2xl opacity-20">"</div>
               <p className="text-lg md:text-xl text-charcoal-800 italic font-semibold leading-relaxed relative z-10">
                 "The more you learn the more you earn"
