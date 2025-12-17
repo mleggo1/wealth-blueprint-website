@@ -46,7 +46,7 @@ export const wealthTools: WealthTool[] = [
   {
     id: "goals-blueprint",
     name: "Goals Blueprint",
-    description: "Define and track your financial goals with a clear, visual framework that helps you understand what's needed to achieve them. Educational tool only. Not financial advice.",
+    description: "Track your financial and life goals with a clear, visual framework that helps you understand what's needed to achieve them. Educational tool only. Not financial advice.",
     url: "https://goalsblueprint.vercel.app/",
     icon: "🗺️",
   },
