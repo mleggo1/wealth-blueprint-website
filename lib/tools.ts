@@ -50,5 +50,12 @@ export const wealthTools: WealthTool[] = [
     url: "https://goalsblueprint.vercel.app/",
     icon: "🗺️",
   },
+  {
+    id: "family-wealth-blueprint",
+    name: "Family Wealth Blueprint",
+    description: "Plan and understand how to build wealth across generations with tools designed for families. Educational tool only. Not financial advice.",
+    url: "https://family-wealth-blueprint.vercel.app/",
+    icon: "👨‍👩‍👦",
+  },
 ];
 
