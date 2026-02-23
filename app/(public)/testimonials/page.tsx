@@ -54,7 +54,7 @@ export default function Testimonials() {
     },
     {
       name: "Brent Campbell",
-      role: "Executive Director, Oracle Group Insurance Brokers • 25/09/2025",
+      role: "Executive Director, Oracle Group Insurance Brokers",
       content: "Michael has a real talent for detail and for building trusted, professional relationships. He brings clarity to complex ideas and genuinely cares about helping people make smarter long-term decisions.",
       rating: 5,
     },
