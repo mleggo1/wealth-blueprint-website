@@ -148,7 +148,7 @@ export default function Home() {
         <div className="container-custom w-full max-w-7xl lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] xl:px-10 2xl:px-12">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="heading-2 mb-6 text-4xl md:text-5xl">
-              What's In It For <span className="text-teal-500">You</span>?
+              What's In It For <span className="text-teal-500">You?</span>
             </h2>
             <p className="text-xl text-charcoal-700 leading-relaxed">
               Stop guessing. Start learning. Get a clear, educational roadmap that helps you understand wealth-building principles — tailored to <span className="font-bold text-navy-900">your</span> learning needs and <span className="font-bold text-navy-900">your</span> questions.

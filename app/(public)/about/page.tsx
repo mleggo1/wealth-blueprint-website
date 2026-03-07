@@ -65,7 +65,7 @@ export default function About() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="heading-2 mb-6 text-4xl md:text-5xl">
-              What's In It For <span className="text-teal-500">You</span>?
+              What's In It For <span className="text-teal-500">You?</span>
             </h2>
             <p className="text-xl text-charcoal-700 leading-relaxed">
               Stop guessing. Start building. Get strategies that have worked for <span className="font-bold text-navy-900">30+ years</span> across <span className="font-bold text-navy-900">4 continents</span>.
