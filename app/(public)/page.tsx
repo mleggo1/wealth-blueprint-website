@@ -274,13 +274,13 @@ export default function Home() {
               How It Works
             </h2>
             <p className="text-base md:text-xl text-charcoal-700 leading-relaxed">
-              A simple, structured approach
+              A simple, structured education only approach
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 max-w-6xl mx-auto">
             <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-8 shadow border border-gold-200 hover:shadow-xl transition-all">
               <div className="text-4xl md:text-5xl mb-2 md:mb-4">📞</div>
-              <h3 className="heading-3 text-base md:text-xl mb-2 md:mb-4">Discovery Session (Education Only)</h3>
+              <h3 className="heading-3 text-base md:text-xl mb-2 md:mb-4">Free Discovery Session</h3>
               <p className="text-charcoal-700 text-sm md:text-base">
                 We discuss your goals and questions — to understand what concepts you want clarity on.
               </p>

@@ -35,10 +35,21 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">
-              <span className="text-gold-500">Wealth</span><span className="text-navy-900">Blueprint</span>
-            </div>
+          <Link
+            href="/"
+            className="flex items-center gap-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 rounded-sm"
+          >
+            <span className="relative flex items-baseline">
+              {/* Accent: vertical green gradient */}
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-5 md:h-6 bg-gradient-to-b from-teal-800 via-teal-600 to-teal-500 rounded-full opacity-70 group-hover:opacity-90 transition-opacity duration-300" aria-hidden />
+              <span className="text-2xl md:text-3xl font-extrabold tracking-tight pl-2 md:pl-2.5">
+                <span className="logo-wealth">Wealth</span>
+                <span className="text-navy-900 tracking-tight align-baseline relative">
+                  Blueprint
+                  <span className="absolute bottom-0.5 left-0 w-full h-px bg-gradient-to-r from-teal-600/50 via-teal-500/30 to-transparent rounded-full group-hover:from-teal-600/60 transition-colors duration-300" aria-hidden />
+                </span>
+              </span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
