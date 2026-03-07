@@ -21,138 +21,96 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-ocean-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
-        <div className="container-custom relative z-10">
-          {/* Main Headline - First on Mobile */}
+        <div className="container-custom relative z-10 w-full max-w-7xl lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] xl:px-10 2xl:px-12">
+          {/* Main Headline + Quote - First on Mobile */}
           <div className="mb-6 lg:hidden">
             <h1 className="heading-1 mb-0 text-3xl md:text-4xl leading-[1.1] font-extrabold">
               <span className="bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent drop-shadow-sm">Build Clarity.</span><br />
               <span className="text-navy-900 drop-shadow-sm">Build Confidence.</span><br />
               <span className="bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent drop-shadow-sm">Build Wealth — Through Education.</span>
             </h1>
+            <div className="mt-4 pl-4 border-l-4 border-gold-400 bg-gold-50/70 py-3 rounded-r-lg">
+              <p className="text-base text-charcoal-800 italic font-semibold">"The more you learn the more you earn"</p>
+              <p className="text-sm text-charcoal-600 font-medium mt-0.5">— Warren Buffett</p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
-            {/* Left side - Text Content */}
-            <div className="order-3 lg:order-1">
-              {/* Main Headline - Desktop Only */}
-              <div className="hidden lg:block mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 2xl:gap-24 items-start">
+            {/* Left side - Text Content (broken into visual blocks, two-col where it helps) */}
+            <div className="order-3 lg:order-1 space-y-8">
+              {/* Block 1: Headline + Quote — intro only */}
+              <div className="hidden lg:block">
                 <h1 className="heading-1 text-5xl lg:text-6xl xl:text-7xl leading-[1.05] font-extrabold mb-6">
-                  <span className="bg-gradient-to-r from-teal-500 via-teal-600 to-teal-500 bg-clip-text text-transparent drop-shadow-lg animate-gradient bg-[length:200%_auto]">Build Clarity.</span><br />
+                  <span className="bg-gradient-to-r from-teal-500 via-teal-600 to-teal-500 bg-clip-text text-transparent drop-shadow-lg">Build Clarity.</span><br />
                   <span className="text-navy-900 drop-shadow-md">Build Confidence.</span><br />
                   <span className="bg-gradient-to-r from-teal-500 via-teal-600 to-teal-500 bg-clip-text text-transparent drop-shadow-lg">Build Wealth — Through Education.</span>
                 </h1>
-                {/* Warren Buffett Quote - Enhanced */}
-                <div className="relative mt-6 mb-8 pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-4 rounded-r-lg animate-subtle-pulse">
-                  <div className="absolute top-2 left-2 text-2xl opacity-20">"</div>
-                  <p className="text-lg md:text-xl text-charcoal-800 italic font-semibold leading-relaxed relative z-10">
-                    "The more you learn the more you earn"
-                  </p>
-                  <p className="text-sm md:text-base text-charcoal-600 font-medium mt-2">— Warren Buffett</p>
-                </div>
-              </div>
-              
-              {/* Opening Statement - Enhanced */}
-              <div className="space-y-6 mb-8">
-                <p className="text-xl md:text-2xl mb-6 text-charcoal-800 leading-relaxed font-bold">
-                  Most people feel lost or overwhelmed with money.
-                </p>
-                <p className="text-base md:text-lg mb-6 text-charcoal-800 leading-relaxed font-semibold">
-                  My job is to help you understand how wealth is built — using simple concepts, long-term thinking and world-class educational tools.
-                </p>
-                <p className="text-sm md:text-base mb-6 text-charcoal-700 leading-relaxed">
-                  You'll learn the fundamentals behind investing, superannuation, compounding, and long-term decision-making — so you can make smarter, more confident choices for your future.
-                </p>
-              </div>
-              
-              {/* No Sales Box - Enhanced */}
-              <div className="relative bg-gradient-to-br from-teal-50 via-teal-100/50 to-ocean-50 border-l-4 border-teal-500 p-6 mb-8 rounded-r-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-teal-200/20 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-                <div className="relative z-10">
-                  <p className="text-base font-bold text-navy-900 mb-2 flex items-center">
-                    <span className="text-teal-600 mr-2">✓</span> No sales.
-                  </p>
-                  <p className="text-base font-bold text-navy-900 mb-2 flex items-center">
-                    <span className="text-teal-600 mr-2">✓</span> No product recommendations.
-                  </p>
-                  <p className="text-base font-bold text-navy-900 mb-2 flex items-center">
-                    <span className="text-teal-600 mr-2">✓</span> No financial advice.
-                  </p>
-                  <p className="text-sm text-charcoal-700 mt-3 font-medium">Just education that empowers you.</p>
+                <div className="relative pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-3 rounded-r-lg animate-subtle-pulse">
+                  <p className="text-lg text-charcoal-800 italic font-semibold relative z-10">"The more you learn the more you earn"</p>
+                  <p className="text-sm text-charcoal-600 font-medium mt-1">— Warren Buffett</p>
                 </div>
               </div>
 
-              {/* Client Quotes - Enhanced */}
-              <div className="mb-8 space-y-4">
-                <p className="text-base font-bold text-charcoal-800 mb-4">Clients describe the experience as:</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="group relative bg-gradient-to-br from-white to-teal-50/50 rounded-2xl p-5 shadow-xl border-l-4 border-teal-500 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-teal-600">
-                    <div className="absolute top-2 right-2 text-3xl opacity-10 group-hover:opacity-20 transition-opacity">"</div>
-                    <p className="text-charcoal-900 font-semibold italic text-sm md:text-base leading-relaxed relative z-10">"Game-changing clarity."</p>
+              {/* Block 2: Hook + No sales — two columns on desktop to break the single line */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                <div>
+                  <p className="text-xl md:text-2xl text-charcoal-800 font-bold leading-snug mb-2">Most people feel lost or overwhelmed with money.</p>
+                  <p className="text-base text-charcoal-700 font-medium">I help you understand how wealth is built — simple concepts, no jargon.</p>
+                </div>
+                <div className="bg-white/90 border-2 border-teal-200 rounded-2xl p-5 shadow-lg">
+                  <p className="text-sm font-bold text-navy-900 mb-1.5 flex items-center"><span className="text-teal-600 mr-2">✓</span> No sales</p>
+                  <p className="text-sm font-bold text-navy-900 mb-1.5 flex items-center"><span className="text-teal-600 mr-2">✓</span> No product recommendations</p>
+                  <p className="text-sm font-bold text-navy-900 flex items-center"><span className="text-teal-600 mr-2">✓</span> No financial advice</p>
+                  <p className="text-xs text-charcoal-600 mt-2 font-medium">Just education that empowers you.</p>
+                </div>
+              </div>
+
+              {/* Block 3: Client quotes — card grid (clear separation) */}
+              <div>
+                <p className="text-sm font-bold text-charcoal-600 mb-3 uppercase tracking-wide">What clients say</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-teal-500">
+                    <p className="text-charcoal-900 font-semibold italic text-sm">"Game-changing clarity."</p>
                   </div>
-                  <div className="group relative bg-gradient-to-br from-white to-gold-50/50 rounded-2xl p-5 shadow-xl border-l-4 border-gold-500 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-gold-600">
-                    <div className="absolute top-2 right-2 text-3xl opacity-10 group-hover:opacity-20 transition-opacity">"</div>
-                    <p className="text-charcoal-900 font-semibold italic text-sm md:text-base leading-relaxed relative z-10">"Simple, automated, and aligned with my life."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-gold-500">
+                    <p className="text-charcoal-900 font-semibold italic text-sm">"Simple, automated, and aligned with my life."</p>
                   </div>
-                  <div className="group relative bg-gradient-to-br from-white to-ocean-50/50 rounded-2xl p-5 shadow-xl border-l-4 border-ocean-500 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-ocean-600">
-                    <div className="absolute top-2 right-2 text-3xl opacity-10 group-hover:opacity-20 transition-opacity">"</div>
-                    <p className="text-charcoal-900 font-semibold italic text-sm md:text-base leading-relaxed relative z-10">"I finally understand how to build long-term wealth."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-ocean-500">
+                    <p className="text-charcoal-900 font-semibold italic text-sm">"I finally understand how to build long-term wealth."</p>
                   </div>
-                  <div className="group relative bg-gradient-to-br from-white to-navy-50/50 rounded-2xl p-5 shadow-xl border-l-4 border-navy-500 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-navy-600">
-                    <div className="absolute top-2 right-2 text-3xl opacity-10 group-hover:opacity-20 transition-opacity">"</div>
-                    <p className="text-charcoal-900 font-semibold italic text-sm md:text-base leading-relaxed relative z-10">"It opened my eyes to what's truly possible."</p>
+                  <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-navy-500">
+                    <p className="text-charcoal-900 font-semibold italic text-sm">"It opened my eyes to what's truly possible."</p>
                   </div>
                 </div>
-                <Link href="/testimonials" className="inline-flex items-center mt-4 text-teal-600 hover:text-teal-700 font-bold text-sm transition-all group">
-                  <span>Read all testimonials</span>
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                <Link href="/testimonials" className="inline-flex items-center mt-3 text-teal-600 hover:text-teal-700 font-semibold text-sm">
+                  Read all testimonials <span className="ml-1">→</span>
                 </Link>
               </div>
 
-              {/* Wealth Blueprint Description - Enhanced */}
-              <div className="relative bg-gradient-to-br from-teal-50 via-ocean-50 to-teal-100/50 rounded-3xl p-6 mb-8 shadow-2xl border-2 border-teal-200/50 hover:border-teal-300 transition-all duration-300 overflow-hidden">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-teal-300/20 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div className="relative z-10">
-                  <p className="text-base md:text-lg text-charcoal-900 leading-relaxed font-semibold">
-                    With the <span className="font-extrabold text-navy-900 bg-gold-100/50 px-2 py-1 rounded">Wealth Blueprint</span>, you get a personalised <span className="font-bold text-teal-700">financial-education roadmap</span> that explains how wealth is built, how investing works, and what long-term financial principles matter most — without the complexity or jargon.
+              {/* Block 4: Wealth Blueprint + Credentials — two columns on desktop */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-br from-teal-50 to-ocean-50 rounded-2xl p-5 border border-teal-200 shadow-lg">
+                  <p className="text-base text-charcoal-900 font-semibold leading-relaxed">
+                    The <span className="font-bold text-navy-900">Wealth Blueprint</span> is a personalised financial-education roadmap — how wealth is built, how investing works, without the jargon.
                   </p>
+                </div>
+                <div className="bg-navy-900 text-white rounded-2xl p-5 shadow-xl">
+                  <p className="text-sm font-bold text-gold-400 mb-2">30 years global experience</p>
+                  <p className="text-sm font-bold text-white">JPMorgan • Merrill Lynch • Bank of America • Bloomberg</p>
+                  <p className="text-xs text-ocean-200 mt-1">Australia, London, New York</p>
+                  <p className="text-sm font-bold text-gold-300 mt-3 pt-3 border-t border-gold-400/30">Simple strategies. Real results.</p>
                 </div>
               </div>
 
-              {/* Credentials - Enhanced */}
-              <div className="relative bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 text-white rounded-3xl p-6 mb-8 shadow-2xl overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-gold-400/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/10 rounded-full -ml-24 -mb-24 blur-3xl"></div>
-                <div className="relative z-10">
-                  <p className="text-base font-extrabold mb-3 text-gold-400 flex items-center">
-                    <span className="text-2xl mr-2">⭐</span> 30 years of global experience
-                  </p>
-                  <p className="text-lg font-bold mb-2 text-white">
-                    JPMorgan • Merrill Lynch • Bank of America • Bloomberg
-                  </p>
-                  <p className="text-sm text-ocean-200 mb-4">Australia, London and New York</p>
-                  <div className="border-t border-gold-400/30 pt-4">
-                    <p className="text-base font-bold text-gold-300">Simple strategies. Real results.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA Button - Enhanced */}
-              <div className="mb-4">
-                <Link href="/contact" className="group relative inline-flex items-center justify-center text-base md:text-lg px-10 py-5 font-extrabold text-white bg-gradient-to-r from-navy-800 via-navy-900 to-navy-800 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <span className="absolute inset-0 bg-gradient-to-r from-teal-600 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative z-10 flex items-center">
-                    Start Your Wealth-Education Blueprint
-                    <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                  </span>
+              {/* Block 5: CTA — full width, clear close to intro */}
+              <div className="pt-2">
+                <Link href="/contact" className="group inline-flex items-center justify-center text-base md:text-lg px-8 py-4 font-bold text-white bg-navy-800 hover:bg-navy-900 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                  Start Your Wealth-Education Blueprint <span className="ml-2 group-hover:translate-x-1">→</span>
                 </Link>
+                <p className="text-xs text-charcoal-500 mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <span>✓ Free discovery call</span><span className="text-charcoal-300">•</span><span>✓ No obligation</span><span className="text-charcoal-300">•</span><span>✓ Education only</span>
+                </p>
               </div>
-              <p className="text-xs md:text-sm text-charcoal-600 font-medium flex flex-wrap items-center gap-2">
-                <span className="flex items-center"><span className="text-teal-600 mr-1">✓</span> Free discovery call</span>
-                <span className="text-charcoal-400">•</span>
-                <span className="flex items-center"><span className="text-teal-600 mr-1">✓</span> No obligation</span>
-                <span className="text-charcoal-400">•</span>
-                <span className="flex items-center"><span className="text-teal-600 mr-1">✓</span> Education only — no financial advice</span>
-              </p>
             </div>
 
             {/* Right side - Image - Enhanced */}
@@ -182,22 +140,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Warren Buffett Quote - Mobile Only, After Image */}
-          <div className="lg:hidden mb-8 mt-8">
-            <div className="relative pl-6 border-l-4 border-gold-400 bg-gradient-to-r from-gold-50/50 to-transparent py-5 rounded-r-xl shadow-lg animate-subtle-pulse">
-              <div className="absolute top-2 left-2 text-2xl opacity-20">"</div>
-              <p className="text-lg md:text-xl text-charcoal-800 italic font-semibold leading-relaxed relative z-10">
-                "The more you learn the more you earn"
-              </p>
-              <p className="text-sm md:text-base text-charcoal-600 font-medium mt-2">— Warren Buffett</p>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Value Proposition - What's In It For You */}
       <section className="section-padding bg-white">
-        <div className="container-custom">
+        <div className="container-custom w-full max-w-7xl lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] xl:px-10 2xl:px-12">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="heading-2 mb-6 text-4xl md:text-5xl">
               What's In It For <span className="text-teal-500">You</span>?
@@ -207,7 +155,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl xl:max-w-7xl mx-auto">
             <div className="bg-gradient-to-br from-ocean-50 to-teal-50 rounded-2xl p-8 shadow-lg border border-ocean-200 hover:shadow-xl transition-all">
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="heading-3 text-2xl mb-4">Clarity</h3>
