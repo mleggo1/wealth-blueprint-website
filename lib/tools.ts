@@ -16,9 +16,9 @@ export const wealthTools: WealthTool[] = [
     icon: "🎯",
   },
   {
-    id: "investment-matchmaker",
-    name: "Investment Matchmaker",
-    description: "Explore example investment mixes to understand different approaches and what might suit your goals. Educational tool only. Not financial advice.",
+    id: "investment-educator",
+    name: "Investment Educator",
+    description: "Explore example allocation scenarios to see how different broad approaches behave — for learning only. Not financial advice or product matching.",
     url: "https://investment-matchmaker.vercel.app/",
     icon: "🔍",
   },

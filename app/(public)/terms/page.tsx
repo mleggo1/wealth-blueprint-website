@@ -17,9 +17,9 @@ export default function Terms() {
               <section>
                 <h2 className="heading-2 text-2xl mb-4">Services</h2>
                 <p className="text-body">
-                  Wealth Blueprint provides wealth coaching services, educational content, and access 
-                  to financial tools and calculators. Our services are for educational and informational 
-                  purposes only and do not constitute financial, investment, or legal advice.
+                  Wealth Blueprint provides money coaching, general financial education, and access 
+                  to educational tools and calculators. Our services are for educational and informational 
+                  purposes only and do not constitute financial product advice, financial planning, investment advice, or legal advice.
                 </p>
               </section>
 
@@ -38,8 +38,7 @@ export default function Terms() {
               <section>
                 <h2 className="heading-2 text-2xl mb-4">Wealth Blueprint Service</h2>
                 <p className="text-body">
-                  The Wealth Blueprint is a one-time service that includes personalized coaching and 
-                  planning. Specific terms and deliverables will be outlined in your service agreement.
+                  The Wealth Blueprint is a one-time money coaching and education framework. It helps you understand concepts and options; it is not personal financial advice or a financial plan. Specific terms and deliverables will be outlined in your service agreement.
                 </p>
               </section>
 

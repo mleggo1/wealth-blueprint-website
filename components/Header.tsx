@@ -68,7 +68,7 @@ export default function Header() {
           {/* CTA & Auth */}
           <div className="hidden md:flex items-center space-x-4">
             <Link href="/contact" className="btn-primary">
-              Book a Call
+              Book coaching
             </Link>
             {AuthNav && <AuthNav />}
           </div>
@@ -116,7 +116,7 @@ export default function Header() {
                 className="btn-primary w-full text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book a Call
+                Book coaching
               </Link>
               {AuthNav && <AuthNav mobile />}
             </div>

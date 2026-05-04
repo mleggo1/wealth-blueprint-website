@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Wealth Blueprint | Build Wealth. Live Free.",
-  description: "Get a simple, clear roadmap for your financial future. Strategic investing, real-world experience, and lifestyle by design.",
+  description: "Money coaching and financial education — understand your options and how investing works. General education only; not financial advice.",
   openGraph: {
     title: "Wealth Blueprint | Build Wealth. Live Free.",
-    description: "Get a simple, clear roadmap for your financial future.",
+    description: "Money coaching and financial education. General information only — not financial advice.",
     type: "website",
   },
 };

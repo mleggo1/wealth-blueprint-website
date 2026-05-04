@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About | Wealth Blueprint",
-  description: "Learn about Michael Leggo - global investor with over 30 years of experience. Helping people build real, long-term wealth with clarity, confidence and a clear roadmap.",
+  description: "Learn about Michael Leggo — money coaching and financial education. 30+ years of global experience. General education only — not financial advice.",
 };
 
 export default function About() {
@@ -31,7 +31,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
                 <div className="inline-block bg-gold-100 text-gold-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  👋 Meet Your Wealth Coach
+                  👋 Meet Your Money Coach
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6 leading-tight">
                   I am Michael — a loving husband, dad, surfer and lifelong investor.
@@ -41,7 +41,7 @@ export default function About() {
                 </p>
                 <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gold-500">
                   <p className="text-lg text-charcoal-700 mb-0">
-                    <span className="font-bold text-navy-900">30+ years</span> of global experience • <span className="font-bold text-navy-900">JPMorgan, Merrill Lynch, Bloomberg</span> • Simple strategies that work
+                    <span className="font-bold text-navy-900">30+ years</span> of global experience • <span className="font-bold text-navy-900">JPMorgan, Merrill Lynch, Bloomberg</span> • Simple principles from real-world experience
                   </p>
                 </div>
               </div>
@@ -187,9 +187,9 @@ export default function About() {
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-teal-500 hover:shadow-xl transition-all hover:scale-[1.02]">
                   <div className="text-4xl mb-4">📈</div>
-                  <h4 className="text-xl font-bold text-navy-900 mb-2">Learn About Smart Portfolio Concepts</h4>
+                  <h4 className="text-xl font-bold text-navy-900 mb-2">Learn Portfolio Concepts (Education)</h4>
                   <p className="text-charcoal-700 text-lg">
-                    Understand how low-fee, long-term ETF & digital asset approaches work — so you can make your own informed decisions.
+                    Understand in general how low-fee, long-term ETF and digital-asset approaches are often discussed — educational examples only; not recommendations for you.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-gold-500 hover:shadow-xl transition-all hover:scale-[1.02]">
@@ -201,9 +201,9 @@ export default function About() {
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-navy-500 hover:shadow-xl transition-all hover:scale-[1.02]">
                   <div className="text-4xl mb-4">✅</div>
-                  <h4 className="text-xl font-bold text-navy-900 mb-2">Make Confident Decisions</h4>
+                  <h4 className="text-xl font-bold text-navy-900 mb-2">Build Confidence for Your Own Decisions</h4>
                   <p className="text-charcoal-700 text-lg">
-                    Eliminate confusion and make decisions with clarity and certainty.
+                    Reduce confusion and move forward with clarity — you stay in charge of any decisions, including with a licensed adviser if you choose.
                   </p>
                 </div>
               </div>

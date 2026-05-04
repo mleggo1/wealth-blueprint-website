@@ -11,7 +11,7 @@ export default function ThankYou() {
             </h1>
             
             <p className="text-body text-center mb-6 max-w-2xl mx-auto">
-              I've received your message about your Wealth Blueprint. I'll review your details and get back to you within one business day.
+              I've received your message about the Wealth Blueprint money coaching and education framework. I'll get back to you within one business day.
             </p>
             
             <p className="text-charcoal-600 text-center text-sm md:text-base mb-8 max-w-2xl mx-auto">

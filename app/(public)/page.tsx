@@ -91,14 +91,14 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
                 <div className="bg-gradient-to-br from-teal-50 to-ocean-50 rounded-xl lg:rounded-2xl p-3 lg:p-5 border border-teal-200 shadow lg:shadow-lg">
                   <p className="text-sm lg:text-base text-charcoal-900 font-semibold leading-snug">
-                    The <span className="font-bold text-navy-900">Wealth Blueprint</span> is a personalised education roadmap — how wealth is built, how investing works, without jargon.
+                    <span className="font-bold text-navy-900">Wealth Blueprint</span> — money coaching &amp; education framework. Understand your options, learn how investing works, and make clearer decisions for yourself. Not personal financial advice, financial planning, or a recommendation to buy or sell any financial product.
                   </p>
                 </div>
                 <div className="bg-navy-900 text-white rounded-xl lg:rounded-2xl p-3 lg:p-5 shadow-lg lg:shadow-xl">
                   <p className="text-xs lg:text-sm font-bold text-gold-400 mb-1 lg:mb-2">30 years global experience</p>
                   <p className="text-xs lg:text-sm font-bold text-white">JPMorgan • Merrill Lynch • Bank of America • Bloomberg</p>
                   <p className="text-xs text-ocean-200 mt-0.5 lg:mt-1">Australia, London, New York</p>
-                  <p className="text-xs lg:text-sm font-bold text-gold-300 mt-2 pt-2 lg:mt-3 lg:pt-3 border-t border-gold-400/30">Simple strategies. Real results.</p>
+                  <p className="text-xs lg:text-sm font-bold text-gold-300 mt-2 pt-2 lg:mt-3 lg:pt-3 border-t border-gold-400/30">Simple principles. Decades of experience.</p>
                 </div>
               </div>
 
@@ -149,7 +149,7 @@ export default function Home() {
               What's In It For <span className="text-teal-500">You?</span>
             </h2>
             <p className="text-base md:text-xl text-charcoal-700 leading-relaxed px-1">
-              Stop guessing. Start learning. A clear roadmap tailored to <span className="font-bold text-navy-900">your</span> questions.
+              Stop guessing. Start learning. A clear learning roadmap focused on the topics <span className="font-bold text-navy-900">you</span> want to explore.
             </p>
           </div>
           
@@ -165,7 +165,7 @@ export default function Home() {
               <div className="text-4xl md:text-5xl mb-2 md:mb-4">⚡</div>
               <h3 className="heading-3 text-xl md:text-2xl mb-2 md:mb-4">Confidence</h3>
               <p className="text-charcoal-700 text-sm md:text-lg">
-                Make decisions with certainty. Understand the principles behind wealth-building.
+                Build confidence for your own decisions. Understand principles behind wealth-building in general.
               </p>
             </div>
             <div className="bg-gradient-to-br from-navy-50 to-navy-100 rounded-xl md:rounded-2xl p-5 md:p-8 shadow-lg border border-navy-200 hover:shadow-xl transition-all">
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-6 md:mb-12">
               <h2 className="heading-2 mb-2 md:mb-4 text-2xl md:text-4xl lg:text-5xl">
-                Meet Michael — Your Wealth Coach
+                Meet Michael — Your Money Coach
               </h2>
               <div className="w-16 md:w-24 h-0.5 md:h-1 bg-gold-500 mx-auto rounded-full"></div>
             </div>
@@ -237,12 +237,12 @@ export default function Home() {
               What You'll <span className="text-teal-500">Get</span>
             </h2>
             <p className="text-base md:text-xl text-charcoal-700 leading-relaxed">
-              A roadmap built around <span className="font-bold text-navy-900">your</span> learning needs:
+              A learning roadmap aligned with <span className="font-bold text-navy-900">your</span> questions and topics:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 max-w-6xl mx-auto">
             {[
-              { icon: "💡", text: "A personalised wealth-education roadmap" },
+              { icon: "💡", text: "A money coaching and education framework summary" },
               { icon: "📋", text: "General concepts behind investing, super, ETFs and long-term planning" },
               { icon: "🎯", text: "Educational tools that show how compounding, fees and time work" },
               { icon: "📈", text: "Clear explanations of investment approaches (not recommendations)" },

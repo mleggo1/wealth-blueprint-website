@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | Wealth Blueprint",
-  description: "Comprehensive wealth coaching services including Wealth Blueprint, ongoing coaching, and access to powerful wealth-building tools and calculators.",
+  description: "Money coaching, the Wealth Blueprint education framework, and educational wealth-building tools. General education only — not financial advice.",
 };
 
 export default function Services() {
@@ -15,7 +15,7 @@ export default function Services() {
         <div className="container-custom">
           <h1 className="heading-1 text-center mb-6">Services</h1>
           <p className="text-body text-center max-w-3xl mx-auto">
-            Comprehensive wealth education and tools to help you understand how to build lasting financial freedom. Education only — not financial advice.
+            Money coaching and financial education to help you understand concepts and build lasting clarity with money. General education only — not financial advice or financial planning.
           </p>
         </div>
       </section>
@@ -27,9 +27,8 @@ export default function Services() {
             <div className="bg-gold-50 border border-gold-200 rounded-lg p-8 mb-8">
               <h2 className="heading-2 mb-4">Wealth Blueprint</h2>
               <p className="text-body mb-6">
-                Your core offer — a comprehensive, personalised financial-education roadmap tailored to your learning needs, 
-                goals, and questions. This is a 2-meeting structure that delivers clarity, understanding, 
-                and educational momentum. General education only — not financial product advice.
+                Your core offer — the Wealth Blueprint money coaching and education framework, shaped around the topics you want to learn. 
+                This is a 2-meeting structure focused on clarity and educational momentum. General education only — not financial product advice, personal advice, or a financial plan.
               </p>
               <h3 className="heading-3 text-xl mb-4">What's Included:</h3>
               <ul className="space-y-3 text-charcoal-700">
@@ -80,7 +79,7 @@ export default function Services() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <p className="text-body mb-6">
                 Monthly or quarterly educational check-ins to help you understand progress, review concepts, 
-                explore strategic ideas, and provide learning accountability. Education only — not financial advice.
+                explore strategic concepts for learning, and provide learning accountability. General education only — not financial advice.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

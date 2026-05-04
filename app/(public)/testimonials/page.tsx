@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Testimonials | Wealth Blueprint",
-  description: "See what clients say about working with Michael Leggo and the Wealth Blueprint approach.",
+  description: "Client stories about money coaching and education with Michael Leggo. General learning experiences only — not financial advice.",
 };
 
 export default function Testimonials() {
@@ -92,7 +92,7 @@ export default function Testimonials() {
                   Client <span className="text-teal-500">Testimonials</span>
                 </h1>
                 <p className="text-body text-base md:text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0">
-                  See what clients say about working with Michael and the Wealth Blueprint approach.
+                  Personal views on money coaching and education — not financial advice or guaranteed results.
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Testimonials() {
                       {testimonial.role}
                     </p>
                     <p className="text-xs text-charcoal-500 mt-4 pt-4 border-t border-ocean-200 leading-relaxed">
-                      These testimonials reflect personal learning experiences with our educational services. They are not financial advice and do not guarantee outcomes.
+                      Individual learning experiences only; not financial advice, not typical results, and not endorsements of any product or strategy.
                     </p>
                   </div>
                 </div>

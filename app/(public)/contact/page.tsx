@@ -12,9 +12,9 @@ export default function Contact() {
       <section className="section-padding ocean-gradient relative overflow-hidden">
         <WavePattern />
         <div className="container-custom relative z-10">
-          <h1 className="heading-1 text-center mb-4">Book a Discovery Call</h1>
+          <h1 className="heading-1 text-center mb-4">Book a free discovery session</h1>
           <p className="text-body text-center max-w-3xl mx-auto">
-            You can either call me directly or send a message using the form below.
+            Money coaching and education only — not financial advice. Call me directly or send a message below.
           </p>
         </div>
       </section>

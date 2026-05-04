@@ -79,7 +79,7 @@ function PortalContent({ isSignedIn, user }: { isSignedIn: boolean; user?: any }
             Welcome to Your Portal, {user?.firstName || "Member"}
           </h1>
           <p className="text-xl text-charcoal-300 max-w-2xl">
-            Access your wealth-building tools and calculators. Everything you need to track, plan, and grow your wealth.
+            Access educational wealth tools and calculators. For learning and exploring concepts only — not financial advice or a personal plan.
           </p>
         </div>
       </section>
