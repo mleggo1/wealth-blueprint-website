@@ -121,11 +121,11 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/30 via-transparent to-transparent z-10"></div>
                   <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent z-10"></div>
                   <Image
-                    src="/michael-hero.jpg"
-                    alt="Michael Leggo with family at Three Sisters, Blue Mountains"
-                    width={600}
+                    src="/michael-hero.png"
+                    alt="Michael Leggo — money coach on the beach"
+                    width={1200}
                     height={800}
-                    className="w-full h-auto object-cover object-top rounded-2xl lg:rounded-3xl transform group-hover:scale-105 transition-transform duration-700 min-h-[200px] lg:min-h-0"
+                    className="w-full h-auto object-cover object-[30%_50%] sm:object-center rounded-2xl lg:rounded-3xl transform group-hover:scale-105 transition-transform duration-700 min-h-[200px] lg:min-h-0"
                     priority
                   />
                   <div className="absolute bottom-3 left-3 right-3 lg:bottom-6 lg:left-6 lg:right-6 z-20">
