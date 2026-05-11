@@ -125,12 +125,18 @@ export default function Home() {
                     alt="Michael Leggo — money coach on the beach"
                     width={1200}
                     height={800}
-                    className="w-full h-auto object-cover object-[30%_50%] sm:object-center rounded-2xl lg:rounded-3xl transform group-hover:scale-105 transition-transform duration-700 min-h-[200px] lg:min-h-0"
+                    className="w-full h-auto object-cover object-[28%_42%] sm:object-[35%_45%] lg:object-[center_40%] rounded-2xl lg:rounded-3xl transform group-hover:scale-105 transition-transform duration-700 min-h-[200px] lg:min-h-0"
                     priority
                   />
-                  <div className="absolute bottom-3 left-3 right-3 lg:bottom-6 lg:left-6 lg:right-6 z-20">
-                    <div className="bg-white/95 backdrop-blur-sm rounded-lg lg:rounded-xl p-2 lg:p-3 shadow-lg lg:shadow-xl border border-gold-200/50">
-                      <p className="text-[10px] lg:text-xs font-bold text-navy-900 text-center">30+ Years Experience</p>
+                  {/* Experience badge: top-right on small screens (clear sky), bottom-left on lg+ (classic placement, clear of crop) */}
+                  <div className="absolute top-3 right-3 z-20 max-w-[11.5rem] sm:max-w-[13rem] lg:top-auto lg:right-auto lg:bottom-6 lg:left-6 lg:max-w-[15rem] xl:bottom-8 xl:left-8">
+                    <div className="bg-white/95 backdrop-blur-md rounded-xl p-2.5 sm:p-3 lg:p-3.5 shadow-lg lg:shadow-xl border border-gold-300/60 ring-1 ring-white/80">
+                      <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-snug tracking-tight">
+                        30+ years experience
+                      </p>
+                      <p className="text-[10px] sm:text-[11px] font-semibold text-teal-700 mt-1 leading-snug">
+                        JPMorgan · Merrill · Bloomberg
+                      </p>
                     </div>
                   </div>
                 </div>

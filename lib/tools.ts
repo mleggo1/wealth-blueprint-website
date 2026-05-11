@@ -9,6 +9,20 @@ export interface WealthTool {
 
 export const wealthTools: WealthTool[] = [
   {
+    id: "family-wealth-blueprint",
+    name: "Family Wealth Blueprint",
+    description: "Plan and understand how to build wealth across generations with tools designed for families. Educational tool only. Not financial advice.",
+    url: "https://family-wealth-blueprint.vercel.app/",
+    icon: "👨‍👩‍👦",
+  },
+  {
+    id: "kids-wealthblueprint",
+    name: "Kids Wealth Blueprint",
+    description: "Simple, engaging tools to help teach children about money, saving, and how wealth grows over time. Educational tool only. Not financial advice.",
+    url: "https://kids-wealthblueprint.vercel.app/",
+    icon: "👨‍👩‍👧‍👦",
+  },
+  {
     id: "ultimate-target",
     name: "Ultimate Target",
     description: "See — visually — how your money can grow, what you could spend in retirement, and how long it may last. Educational tool only. Not financial advice.",
@@ -37,25 +51,10 @@ export const wealthTools: WealthTool[] = [
     icon: "⏳",
   },
   {
-    id: "kids-wealthblueprint",
-    name: "Kids Wealth Blueprint",
-    description: "Simple, engaging tools to help teach children about money, saving, and how wealth grows over time. Educational tool only. Not financial advice.",
-    url: "https://kids-wealthblueprint.vercel.app/",
-    icon: "👨‍👩‍👧‍👦",
-  },
-  {
     id: "goals-blueprint",
     name: "Goals Blueprint",
     description: "Track your financial and life goals with a clear, visual framework that helps you understand what's needed to achieve them. Educational tool only. Not financial advice.",
     url: "https://goalsblueprint.vercel.app/",
     icon: "🗺️",
   },
-  {
-    id: "family-wealth-blueprint",
-    name: "Family Wealth Blueprint",
-    description: "Plan and understand how to build wealth across generations with tools designed for families. Educational tool only. Not financial advice.",
-    url: "https://family-wealth-blueprint.vercel.app/",
-    icon: "👨‍👩‍👦",
-  },
 ];
-
