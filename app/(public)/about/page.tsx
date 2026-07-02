@@ -122,7 +122,7 @@ export default function About() {
               <div className="md:col-span-1 flex justify-center md:justify-start">
                 <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-ocean-200 to-ocean-300 rounded-full shadow-2xl border-4 border-white flex items-center justify-center">
                   <Image
-                    src="/MJL Profile 1.JPG"
+                    src="/michael-profile.png"
                     alt="Michael Leggo"
                     width={320}
                     height={320}
