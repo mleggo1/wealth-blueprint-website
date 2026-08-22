@@ -5,30 +5,30 @@ export default function Footer() {
 
   return (
     <footer className="bg-navy-900 text-white">
-      <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container-custom py-12 md:py-16 pb-[max(3rem,env(safe-area-inset-bottom))]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-1">
+          <div className="col-span-1 sm:col-span-2">
+            <div className="text-xl md:text-2xl font-bold mb-1">
               <span className="text-gold-500">Wealth</span><span className="text-white">Blueprint</span>
             </div>
-            <p className="text-sm text-teal-300/90 font-medium mb-4 max-w-md">
+            <p className="text-sm text-teal-300/90 font-medium mb-3 max-w-md">
               Money coaching &amp; education framework
             </p>
-            <p className="text-charcoal-300 mb-4 max-w-md">
+            <p className="text-charcoal-300 text-sm mb-4 max-w-md leading-relaxed">
               Build clarity and confidence with money through coaching and financial education — general information only, not financial advice.
             </p>
             <div className="mb-4">
               <p className="text-sm font-semibold text-charcoal-300 mb-2">Contact</p>
               <a 
                 href="tel:+61428333006" 
-                className="text-gold-400 hover:text-gold-300 transition-colors text-sm block"
+                className="text-gold-400 hover:text-gold-300 transition-colors text-sm inline-flex min-h-[44px] items-center"
               >
-                📞 0428 333 006
+                0428 333 006
               </a>
               <a 
                 href="tel:+61428333006" 
-                className="text-charcoal-400 hover:text-gold-400 transition-colors text-xs block mt-1"
+                className="text-charcoal-400 hover:text-gold-400 transition-colors text-xs block mt-0.5"
               >
                 +61 428 333 006
               </a>

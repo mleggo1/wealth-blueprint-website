@@ -24,8 +24,8 @@ export default function Services() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gold-50 border border-gold-200 rounded-lg p-8 mb-8">
-              <h2 className="heading-2 mb-4">Wealth Blueprint</h2>
+            <div className="bg-gold-50/80 border border-gold-200 rounded-xl p-6 md:p-8 mb-8">
+              <h2 className="heading-2 mb-4 text-2xl md:text-3xl">Wealth Blueprint</h2>
               <p className="text-body mb-6">
                 Your core offer — the Wealth Blueprint money coaching and education framework, shaped around the topics you want to learn. 
                 This is a 2-meeting structure focused on clarity and educational momentum. General education only — not financial product advice, personal advice, or a financial plan.
@@ -76,7 +76,7 @@ export default function Services() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-2 mb-6">Ongoing Coaching</h2>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="surface p-6 md:p-8">
               <p className="text-body mb-6">
                 Monthly or quarterly educational check-ins to help you understand progress, review concepts, 
                 explore strategic concepts for learning, and provide learning accountability. General education only — not financial advice.
@@ -118,26 +118,26 @@ export default function Services() {
           <p className="text-center text-body mb-12 max-w-2xl mx-auto">
             Subscription gives you access to powerful educational wealth-building tools and calculators. Education only — not financial advice.
           </p>
-          <div className="bg-navy-50 border border-navy-300 rounded-lg p-4 mb-8 max-w-3xl mx-auto">
-            <p className="text-sm text-charcoal-700 italic text-center">
+          <div className="surface-muted p-4 mb-8 max-w-3xl mx-auto">
+            <p className="text-sm text-charcoal-700 text-center">
               <strong className="text-navy-900">EDUCATION TOOLS ONLY — NOT FINANCIAL ADVICE</strong><br />
               These tools illustrate concepts only. They do not recommend products or tell you what to invest in.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {wealthTools.map((tool) => (
               <div
                 key={tool.id}
-                className="bg-white border border-charcoal-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                className="surface p-5 md:p-6"
               >
-                <div className="text-4xl mb-4">{tool.icon}</div>
-                <h3 className="heading-3 text-xl mb-3">{tool.name}</h3>
-                <p className="text-charcoal-600 mb-4">{tool.description}</p>
+                <div className="text-2xl mb-3" aria-hidden>{tool.icon}</div>
+                <h3 className="text-lg font-semibold text-navy-900 mb-2">{tool.name}</h3>
+                <p className="text-charcoal-600 text-sm leading-relaxed">{tool.description}</p>
               </div>
             ))}
           </div>
-          <div className="bg-navy-50 p-8 rounded-lg max-w-2xl mx-auto">
-            <h3 className="heading-3 text-xl mb-4 text-center">Portal Benefits</h3>
+          <div className="surface-muted p-6 md:p-8 max-w-2xl mx-auto">
+            <h3 className="text-lg font-semibold text-navy-900 mb-4 text-center">Portal Benefits</h3>
             <ul className="space-y-3 text-charcoal-700">
               <li className="flex items-start">
                 <span className="text-gold-600 font-bold mr-3">✓</span>

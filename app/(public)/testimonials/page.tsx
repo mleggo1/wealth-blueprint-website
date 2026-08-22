@@ -69,29 +69,24 @@ export default function Testimonials() {
           <div className="max-w-6xl mx-auto">
             {/* Hero Content - Side by Side Layout */}
             <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
-              {/* Profile Picture - Left Side */}
               <div className="flex-shrink-0">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-ocean-400 to-gold-400 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-                  <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden border-4 border-white shadow-2xl transform hover:scale-105 transition-transform">
-                    <Image
-                      src="/michael-beach-profile.jpg"
-                      alt="Michael Leggo"
-                      width={208}
-                      height={208}
-                      className="w-full h-full object-cover"
-                      priority
-                    />
-                  </div>
+                <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full overflow-hidden border-2 border-white shadow-md">
+                  <Image
+                    src="/michael-profile.png"
+                    alt="Michael Leggo"
+                    width={208}
+                    height={208}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
                 </div>
               </div>
               
-              {/* Text Content - Right Side */}
               <div className="flex-1 text-center lg:text-left">
-                <h1 className="heading-1 mb-3 text-3xl md:text-4xl lg:text-5xl">
-                  Client <span className="text-teal-500">Testimonials</span>
+                <h1 className="heading-1 mb-3">
+                  Client <span className="text-teal-600">Testimonials</span>
                 </h1>
-                <p className="text-body text-base md:text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0">
+                <p className="text-body max-w-2xl mx-auto lg:mx-0">
                   Personal views on money coaching and education — not financial advice or guaranteed results.
                 </p>
               </div>
@@ -104,56 +99,50 @@ export default function Testimonials() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
               {testimonials.map((testimonial, index) => (
-                <div
+                <article
                   key={index}
-                  className="bg-gradient-to-br from-ocean-50 to-teal-50 rounded-2xl p-8 md:p-10 shadow-xl border border-ocean-200 hover:shadow-2xl transition-all h-full flex flex-col"
+                  className="surface p-6 md:p-8 h-full flex flex-col"
                 >
-                  {/* Rating Stars */}
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center gap-0.5 mb-4 text-gold-500 text-sm" aria-label={`${testimonial.rating} out of 5 stars`}>
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="text-2xl text-gold-500">⭐</span>
+                      <span key={i}>★</span>
                     ))}
                   </div>
 
-                  {/* Testimonial Content */}
-                  <blockquote className="text-lg md:text-xl leading-relaxed text-charcoal-800 mb-6 font-medium italic flex-grow">
+                  <blockquote className="text-base md:text-lg leading-relaxed text-charcoal-800 mb-5 flex-grow">
                     "{testimonial.content}"
                   </blockquote>
 
-                  {/* Author */}
-                  <div className="border-t border-ocean-200 pt-6 mt-auto">
-                    <p className="text-lg font-bold text-navy-900">
+                  <footer className="border-t border-charcoal-100 pt-4 mt-auto">
+                    <p className="font-semibold text-navy-900">
                       — {testimonial.name}
                     </p>
-                    <p className="text-charcoal-600 text-sm md:text-base">
+                    <p className="text-charcoal-600 text-sm">
                       {testimonial.role}
                     </p>
-                    <p className="text-xs text-charcoal-500 mt-4 pt-4 border-t border-ocean-200 leading-relaxed">
+                    <p className="text-xs text-charcoal-500 mt-3 leading-relaxed">
                       Individual learning experiences only; not financial advice, not typical results, and not endorsements of any product or strategy.
                     </p>
-                  </div>
-                </div>
+                  </footer>
+                </article>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-gradient-to-br from-gold-50 via-gold-100 to-ocean-50">
+      <section className="section-padding bg-navy-50/50 border-t border-charcoal-100">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl border border-gold-200">
-              <h2 className="heading-2 mb-6 text-3xl md:text-4xl">Ready to Build Your Wealth?</h2>
-              <p className="text-body mb-8 text-lg md:text-xl text-charcoal-700">
-                Join others who have gained clarity and confidence through the Wealth Blueprint educational approach.
-              </p>
-              <Link href="/contact" className="btn-primary text-lg px-10 py-5 inline-block font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-                Book a Discovery Call
-              </Link>
-            </div>
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="heading-2 mb-4">Ready to Build Your Wealth?</h2>
+            <p className="text-body mb-8">
+              Join others who have gained clarity and confidence through the Wealth Blueprint educational approach.
+            </p>
+            <Link href="/contact" className="btn-primary">
+              Book a Discovery Call
+            </Link>
           </div>
         </div>
       </section>

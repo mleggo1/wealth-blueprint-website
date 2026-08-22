@@ -23,42 +23,39 @@ export default function Contact() {
       <section className="section-padding bg-gradient-to-b from-white to-[#f0f9ff]/30">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto space-y-8">
-            {/* Phone Card */}
             <a 
               href="tel:+61428333006" 
-              className="block bg-gradient-to-br from-[#f0f9ff] to-[#f0fdfa] border border-[#bae6fd] rounded-lg p-6 shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
+              className="block surface p-5 md:p-6 hover:border-teal-300 transition-colors min-h-[44px]"
             >
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-charcoal-600 mb-2 uppercase tracking-wide">Prefer to chat now?</p>
-                  <p className="text-2xl font-bold text-[#075985] mb-1">
+                  <p className="text-xs font-semibold text-charcoal-500 mb-1.5 uppercase tracking-wide">Prefer to chat now?</p>
+                  <p className="text-2xl font-bold text-navy-900 mb-0.5">
                     0428 333 006
                   </p>
                   <p className="text-sm text-charcoal-600">
                     +61 428 333 006 (outside Australia)
                   </p>
                 </div>
-                <div className="text-center sm:text-right">
-                  <span className="inline-block bg-[#075985] text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                    Tap to call
-                  </span>
-                </div>
+                <span className="inline-flex items-center justify-center min-h-[44px] bg-navy-800 text-white px-5 py-2.5 rounded-xl text-sm font-semibold">
+                  Tap to call
+                </span>
               </div>
             </a>
 
             {/* Form Section */}
             <div>
-              <p className="text-center text-charcoal-700 mb-6">
+              <p className="text-center text-charcoal-700 mb-6 text-sm md:text-base">
                 Or tell me a bit about your situation and I'll get back to you within one business day.
               </p>
               
-              <div className="bg-white border border-charcoal-200 rounded-lg p-8 shadow-sm">
-                <h2 className="heading-2 text-2xl mb-6 text-center">Book a Discovery Call</h2>
+              <div className="surface p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-bold text-navy-900 mb-6 text-center">Book a Discovery Call</h2>
                 
                 <form 
                   action="https://formspree.io/f/mpwbppgq" 
                   method="POST" 
-                  className="space-y-6"
+                  className="space-y-5"
                 >
                   <input
                     type="hidden"
@@ -66,141 +63,56 @@ export default function Contact() {
                     value="/thank-you"
                   />
                   <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-semibold text-charcoal-900 mb-2"
-                    >
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      required
-                      className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      placeholder="Your name"
-                    />
+                    <label htmlFor="name" className="label-field">Name *</label>
+                    <input type="text" name="name" id="name" required className="input-field" placeholder="Your name" />
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-semibold text-charcoal-900 mb-2"
-                    >
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      required
-                      className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      placeholder="your.email@example.com"
-                    />
+                    <label htmlFor="email" className="label-field">Email *</label>
+                    <input type="email" name="email" id="email" required className="input-field" placeholder="your.email@example.com" />
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-semibold text-charcoal-900 mb-2"
-                    >
-                      Mobile Phone Number *
-                    </label>
-                    <input
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      required
-                      className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      placeholder="+61 4XX XXX XXX or 04XX XXX XXX"
-                    />
+                    <label htmlFor="phone" className="label-field">Mobile Phone Number *</label>
+                    <input type="text" name="phone" id="phone" required className="input-field" placeholder="+61 4XX XXX XXX or 04XX XXX XXX" />
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="location"
-                      className="block text-sm font-semibold text-charcoal-900 mb-2"
-                    >
-                      Location
-                    </label>
-                    <input
-                      type="text"
-                      name="location"
-                      id="location"
-                      className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      placeholder="City, Country"
-                    />
+                    <label htmlFor="location" className="label-field">Location</label>
+                    <input type="text" name="location" id="location" className="input-field" placeholder="City, Country" />
                   </div>
 
-                  <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4">
                     <div className="flex-1">
-                      <label
-                        htmlFor="date"
-                        className="block text-sm font-semibold text-charcoal-900 mb-2"
-                      >
-                        Preferred Date *
-                      </label>
-                      <input
-                        type="date"
-                        name="date"
-                        id="date"
-                        required
-                        className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                        min={new Date().toISOString().split('T')[0]}
-                      />
+                      <label htmlFor="date" className="label-field">Preferred Date *</label>
+                      <input type="date" name="date" id="date" required className="input-field" min={new Date().toISOString().split('T')[0]} />
                     </div>
                     <div className="flex-1">
-                      <label
-                        htmlFor="time"
-                        className="block text-sm font-semibold text-charcoal-900 mb-2"
-                      >
-                        Preferred Time *
-                      </label>
-                      <input
-                        type="time"
-                        name="time"
-                        id="time"
-                        required
-                        className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      />
+                      <label htmlFor="time" className="label-field">Preferred Time *</label>
+                      <input type="time" name="time" id="time" required className="input-field" />
                     </div>
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-semibold text-charcoal-900 mb-2"
-                    >
-                      Message *
-                    </label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={5}
-                      required
-                      className="w-full px-4 py-3 border border-charcoal-300 rounded-lg focus:ring-2 focus:ring-navy-500 focus:border-transparent"
-                      placeholder="Tell me about your financial goals and what you'd like to achieve..."
-                    />
+                    <label htmlFor="message" className="label-field">Message *</label>
+                    <textarea name="message" id="message" rows={5} required className="input-field" placeholder="Tell me about your financial goals and what you'd like to achieve..." />
                   </div>
 
-                  <div className="bg-teal-50 border-2 border-teal-200 rounded-lg p-4">
-                    <label className="flex items-start cursor-pointer">
+                  <div className="bg-teal-50/80 border border-teal-200 rounded-xl p-4">
+                    <label className="flex items-start gap-3 cursor-pointer">
                       <input
                         type="checkbox"
                         name="education_only_acknowledgment"
                         required
-                        className="mt-1 mr-3 h-5 w-5 text-teal-600 border-charcoal-300 rounded focus:ring-2 focus:ring-teal-500"
+                        className="mt-1 h-5 w-5 shrink-0 text-teal-600 border-charcoal-300 rounded focus:ring-2 focus:ring-teal-500"
                       />
-                      <span className="text-sm text-charcoal-800">
+                      <span className="text-sm text-charcoal-800 leading-snug">
                         I understand that this service provides <strong>general education only</strong> and does not include financial product advice, recommendations, or personalised investment guidance. *
                       </span>
                     </label>
                   </div>
 
-                  <button 
-                    type="submit" 
-                    className="btn-primary w-full"
-                  >
+                  <button type="submit" className="btn-primary w-full">
                     Send Message
                   </button>
                 </form>

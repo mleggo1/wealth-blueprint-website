@@ -4,14 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-// Check if Clerk is configured
 const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 const hasClerk = clerkKey && 
   clerkKey !== "pk_test_placeholder" && 
   !clerkKey.includes("placeholder") &&
   clerkKey.startsWith("pk_");
 
-// Dynamically import AuthNav only when Clerk is configured
 const AuthNav = hasClerk 
   ? dynamic(() => import("@/components/AuthNav"), { ssr: false })
   : null;
@@ -31,53 +29,50 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-charcoal-200">
-      <nav className="container-custom">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-charcoal-200 supports-[padding:max(0px)]:pt-[env(safe-area-inset-top)]">
+      <nav className="container-custom" aria-label="Main">
+        <div className="flex items-center justify-between h-16 md:h-20">
           <Link
             href="/"
-            className="flex items-center gap-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 rounded-sm"
+            className="flex items-center group rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
           >
             <span className="relative flex items-baseline">
-              {/* Accent: vertical green gradient */}
-              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-5 md:h-6 bg-gradient-to-b from-teal-800 via-teal-600 to-teal-500 rounded-full opacity-70 group-hover:opacity-90 transition-opacity duration-300" aria-hidden />
-              <span className="text-2xl md:text-3xl font-extrabold tracking-tight pl-2 md:pl-2.5">
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-5 md:h-6 bg-gradient-to-b from-teal-800 via-teal-600 to-teal-500 rounded-full opacity-70" aria-hidden />
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight pl-2 md:pl-2.5">
                 <span className="logo-wealth">Wealth</span>
-                <span className="text-navy-900 tracking-tight align-baseline relative">
+                <span className="text-navy-900 tracking-tight relative">
                   Blueprint
-                  <span className="absolute bottom-0.5 left-0 w-full h-px bg-gradient-to-r from-teal-600/50 via-teal-500/30 to-transparent rounded-full group-hover:from-teal-600/60 transition-colors duration-300" aria-hidden />
+                  <span className="absolute bottom-0.5 left-0 w-full h-px bg-gradient-to-r from-teal-600/50 via-teal-500/30 to-transparent" aria-hidden />
                 </span>
               </span>
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-charcoal-700 hover:text-navy-900 font-medium transition-colors"
+                className="text-sm text-charcoal-700 hover:text-navy-900 font-medium transition-colors py-2"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* CTA & Auth */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/contact" className="btn-primary">
+          <div className="hidden lg:flex items-center gap-4">
+            <Link href="/contact" className="btn-primary text-sm">
               Book coaching
             </Link>
             {AuthNav && <AuthNav />}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            type="button"
+            className="lg:hidden inline-flex items-center justify-center min-h-[44px] min-w-[44px] -mr-2 rounded-xl text-navy-900 hover:bg-navy-50 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
             <svg
               className="w-6 h-6"
@@ -87,6 +82,7 @@ export default function Header() {
               strokeWidth="2"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden
             >
               {mobileMenuOpen ? (
                 <path d="M6 18L18 6M6 6l12 12" />
@@ -97,15 +93,14 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-charcoal-200">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden pb-4 border-t border-charcoal-200 pt-2">
+            <div className="flex flex-col">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-charcoal-700 hover:text-navy-900 font-medium"
+                  className="text-charcoal-800 hover:text-navy-900 font-medium py-3 min-h-[44px] flex items-center border-b border-charcoal-100 last:border-0"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -113,12 +108,12 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="btn-primary w-full text-center"
+                className="btn-primary w-full text-center mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Book coaching
               </Link>
-              {AuthNav && <AuthNav mobile />}
+              {AuthNav && <div className="mt-3"><AuthNav mobile /></div>}
             </div>
           </div>
         )}

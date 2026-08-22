@@ -57,101 +57,53 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
       </section>
 
       {/* Pricing Cards */}
-      <section className="section-padding bg-gradient-to-b from-white to-ocean-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Wealth Blueprint */}
-            <div className="bg-gradient-to-br from-gold-50 to-gold-100 border-2 border-gold-400 rounded-2xl p-8 hover:shadow-2xl transition-all transform hover:scale-[1.02] relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-gold-500 text-navy-900 px-4 py-1 rounded-bl-lg text-sm font-bold">
+            <div className="surface p-6 md:p-8 relative flex flex-col">
+              <span className="absolute top-4 right-4 text-[10px] sm:text-xs font-bold uppercase tracking-wide bg-gold-500 text-navy-900 px-2.5 py-1 rounded-md">
                 Start Here
+              </span>
+              <h2 className="text-2xl font-bold text-navy-900 mb-1 pr-20">Wealth Blueprint</h2>
+              <p className="text-sm text-charcoal-600 mb-5">Money coaching &amp; education framework — your learning roadmap</p>
+              <div className="mb-6">
+                <span className="text-base text-charcoal-600 font-medium">From </span>
+                <span className="text-4xl font-bold text-navy-900">$1,250</span>
               </div>
-              <div className="mt-6">
-                <h2 className="heading-2 text-3xl mb-2">Wealth Blueprint</h2>
-                <p className="text-sm text-charcoal-600 mb-6">Money coaching &amp; education framework — your learning roadmap</p>
-                <div className="mb-8">
-                  <span className="text-lg md:text-xl text-charcoal-700 font-semibold">From </span>
-                  <span className="text-5xl font-bold text-navy-900">$1,250</span>
-                </div>
-                <ul className="space-y-4 mb-8 text-charcoal-700">
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">2-meeting structure</span>
+              <ul className="space-y-2.5 mb-8 text-charcoal-700 text-sm md:text-base flex-1">
+                {["2-meeting structure", "Learning roadmap & education framework summary", "Complete wealth-education framework", "Educational automation concepts overview", "Mindset & psychology guidance", "Step-by-step learning clarity", "General money principles you can apply"].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-teal-600 font-bold shrink-0" aria-hidden>✓</span>
+                    <span>{item}</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Learning roadmap &amp; education framework summary</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Complete wealth-education framework</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Educational automation concepts overview</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Mindset & psychology guidance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">Step-by-step learning clarity</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-600 font-bold mr-3 text-xl">✓</span>
-                    <span className="text-lg">General money principles you can apply</span>
-                  </li>
-                </ul>
-                <Link href="/contact" className="btn-primary w-full text-center block text-lg py-4 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
-                  Book a Call
-                </Link>
-              </div>
+                ))}
+              </ul>
+              <Link href="/contact" className="btn-primary w-full text-center">
+                Book a Call
+              </Link>
             </div>
 
             {/* Portal Membership */}
-            <div className="bg-gradient-to-br from-ocean-50 to-teal-50 border-2 border-ocean-300 rounded-2xl p-8 hover:shadow-2xl transition-all transform hover:scale-[1.02] relative">
-              <div className="mb-2">
-                <h2 className="heading-2 text-3xl mb-2">Portal Membership</h2>
-                <p className="text-sm text-teal-700 font-semibold mb-4">Available after Wealth Blueprint</p>
+            <div className="surface p-6 md:p-8 flex flex-col">
+              <h2 className="text-2xl font-bold text-navy-900 mb-1">Portal Membership</h2>
+              <p className="text-sm text-teal-700 font-medium mb-5">Available after Wealth Blueprint</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-navy-900">$49</span>
+                <span className="text-charcoal-600 text-base">/month</span>
               </div>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-navy-900">$49</span>
-                <span className="text-charcoal-600 text-xl">/month</span>
-              </div>
-              <ul className="space-y-4 mb-8 text-charcoal-700">
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Access to all wealth tools</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Ultimate Target calculator</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Investment Educator</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Freedom Scorecard</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Lifespan tool</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Future tools & updates</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Ongoing tracking & support</span>
-                </li>
+              <ul className="space-y-2.5 mb-8 text-charcoal-700 text-sm md:text-base flex-1">
+                {["Access to all wealth tools", "Ultimate Target calculator", "Investment Educator", "Freedom Scorecard", "Lifespan tool", "Future tools & updates", "Ongoing tracking & support"].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-teal-600 font-bold shrink-0" aria-hidden>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
               <button
                 onClick={handleCheckout}
                 disabled={loading || !hasClerk}
-                className="btn-primary w-full text-lg py-4 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all bg-teal-600 hover:bg-teal-700"
+                className="btn-primary w-full bg-teal-700 hover:bg-teal-800"
                 title="Available after completing Wealth Blueprint"
               >
                 {loading ? "Processing..." : hasClerk ? "Available After Blueprint" : "Configure Auth First"}
@@ -159,44 +111,22 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
             </div>
 
             {/* Coaching Packages */}
-            <div className="bg-gradient-to-br from-navy-50 to-charcoal-50 border-2 border-navy-300 rounded-2xl p-8 hover:shadow-2xl transition-all transform hover:scale-[1.02]">
-              <h2 className="heading-2 text-3xl mb-2">Coaching Packages</h2>
-              <p className="text-sm text-charcoal-600 mb-6">Ongoing support & guidance</p>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-navy-900">Custom</span>
-                <span className="text-charcoal-600 text-xl"> pricing</span>
+            <div className="surface p-6 md:p-8 flex flex-col">
+              <h2 className="text-2xl font-bold text-navy-900 mb-1">Coaching Packages</h2>
+              <p className="text-sm text-charcoal-600 mb-5">Ongoing support &amp; guidance</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-navy-900">Custom</span>
+                <span className="text-charcoal-600 text-base"> pricing</span>
               </div>
-              <ul className="space-y-4 mb-8 text-charcoal-700">
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Monthly or quarterly check-ins</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Educational portfolio concept discussions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Concept refreshers (education)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Accountability support</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">General market context (education)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Flexible scheduling</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-navy-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-lg">Email support</span>
-                </li>
+              <ul className="space-y-2.5 mb-8 text-charcoal-700 text-sm md:text-base flex-1">
+                {["Monthly or quarterly check-ins", "Educational portfolio concept discussions", "Concept refreshers (education)", "Accountability support", "General market context (education)", "Flexible scheduling", "Email support"].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-navy-700 font-bold shrink-0" aria-hidden>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
-              <Link href="/contact" className="btn-secondary w-full text-center block text-lg py-4 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+              <Link href="/contact" className="btn-secondary w-full text-center">
                 Contact Me
               </Link>
             </div>
@@ -205,10 +135,10 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-navy-50">
+      <section className="section-padding bg-navy-50/60 border-t border-charcoal-100">
         <div className="container-custom">
-          <h2 className="heading-2 text-center mb-12">Frequently Asked Questions</h2>
-          <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="heading-2 text-center mb-10">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto divide-y divide-charcoal-200">
             {[
               {
                 q: "Can I cancel my Portal subscription anytime?",
@@ -223,9 +153,9 @@ function PricingContent({ isSignedIn = false }: { isSignedIn?: boolean }) {
                 a: "No, the Wealth Blueprint is a standalone service. However, many clients find the Portal tools valuable for ongoing learning and understanding wealth-building concepts. All tools are for education only — not financial advice.",
               },
             ].map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="heading-3 text-xl mb-3">{faq.q}</h3>
-                <p className="text-charcoal-600">{faq.a}</p>
+              <div key={index} className="py-5 first:pt-0">
+                <h3 className="text-lg font-semibold text-navy-900 mb-2">{faq.q}</h3>
+                <p className="text-charcoal-600 text-sm md:text-base leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
