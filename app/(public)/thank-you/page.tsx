@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PHONE_DISPLAY_AU, WHATSAPP_URL } from "@/lib/contact";
 
 export default function ThankYou() {
   return (
@@ -15,19 +16,15 @@ export default function ThankYou() {
             </p>
             
             <p className="text-charcoal-600 text-center text-sm md:text-base mb-8 max-w-2xl mx-auto">
-              If your matter is urgent, you can call me on{" "}
-              <a 
-                href="tel:+61428333006" 
+              If you need me sooner,{" "}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-navy-800 font-semibold hover:text-navy-600 transition-colors"
               >
-                0428 333 006
+                WhatsApp me on {PHONE_DISPLAY_AU}.
               </a>
-              {" "}(<a 
-                href="tel:+61428333006" 
-                className="text-navy-800 font-semibold hover:text-navy-600 transition-colors"
-              >
-                +61 428 333 006
-              </a>{" "}outside Australia).
             </p>
             
             <div className="text-center">

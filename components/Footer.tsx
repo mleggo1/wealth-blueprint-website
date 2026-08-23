@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PHONE_DISPLAY_AU, PHONE_DISPLAY_INTL, TEL_URL, WHATSAPP_URL } from "@/lib/contact";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,17 +21,19 @@ export default function Footer() {
             </p>
             <div className="mb-4">
               <p className="text-sm font-semibold text-charcoal-300 mb-2">Contact</p>
-              <a 
-                href="tel:+61428333006" 
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold-400 hover:text-gold-300 transition-colors text-sm inline-flex min-h-[44px] items-center"
               >
-                0428 333 006
+                WhatsApp {PHONE_DISPLAY_AU}
               </a>
-              <a 
-                href="tel:+61428333006" 
-                className="text-charcoal-400 hover:text-gold-400 transition-colors text-xs block mt-0.5"
+              <a
+                href={TEL_URL}
+                className="text-charcoal-400 hover:text-gold-400 transition-colors text-xs block mt-0.5 min-h-[44px] sm:min-h-0 flex items-center"
               >
-                +61 428 333 006
+                Call {PHONE_DISPLAY_INTL}
               </a>
             </div>
             <p className="text-sm text-charcoal-400">
