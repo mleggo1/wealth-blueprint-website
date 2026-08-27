@@ -37,6 +37,13 @@ export const wealthTools: WealthTool[] = [
     icon: "🔍",
   },
   {
+    id: "etf-dashboard",
+    name: "ETF Dashboard",
+    description: "Compare growth and defensive ETF performance across time horizons, with charts and historical returns. Educational tool only. Not financial advice.",
+    url: "https://etf-dashboards.vercel.app/",
+    icon: "📈",
+  },
+  {
     id: "networth-engine",
     name: "Freedom Scorecard",
     description: "A simple way to see how close you are to financial freedom. Educational tool only. Not financial advice.",
